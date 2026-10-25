@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Corner Edge — History for football corners predictions." />
+  <title>History — Corners | Corner Edge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Corner Edge home">
+        <span class="brand-logo" aria-hidden="true">CE</span>
+        <span class="brand-text">
+          <span class="brand-name">Corner Edge</span>
+          <span class="brand-tag">Bet Assistant</span>
+        </span>
+      </a>
+      <div class="lang-wrap">
+        <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+          <span id="lang-label">EN</span>
+          <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+      </div>
+    </header>
+
+    <main class="history-page">
+      <div class="history-top">
+        <div>
+          <p class="section-kicker" data-i18n="historyKicker">HISTORY</p>
+          <h1 class="page-title" data-i18n="historyTitle">History — Corners</h1>
+          <p class="page-subtitle" id="history-month-label">—</p>
+        </div>
+        <div class="history-actions">
+          <a href="index.html" class="btn btn-ghost" data-i18n="backHome">← Back</a>
+          <button type="button" class="btn btn-primary" id="prev-month-btn" data-i18n="previousMonth">Previous month</button>
+          <a href="history.html" class="btn btn-ghost" id="current-month-btn" hidden data-i18n="currentMonth">Current month</a>
+        </div>
+      </div>
+
+      <div class="summary-grid" id="history-summary" aria-label="Month summary">
+        <div class="panel summary-card">
+          <p class="stat-label" data-i18n="totalPredictions">Total predictions</p>
+          <p class="stat-value" id="sum-total">0</p>
+        </div>
+        <div class="panel summary-card">
+          <p class="stat-label" data-i18n="win">WIN</p>
+          <p class="stat-value text-win" id="sum-win">0</p>
+        </div>
+        <div class="panel summary-card">
+          <p class="stat-label" data-i18n="lost">LOST</p>
+          <p class="stat-value text-lost" id="sum-lost">0</p>
+        </div>
+        <div class="panel summary-card">
+          <p class="stat-label" data-i18n="hitRate">Hit rate</p>
+          <p class="stat-value" id="sum-hit-rate">0%</p>
+        </div>
+        <div class="panel summary-card">
+          <p class="stat-label" data-i18n="averageOdds">Average odds</p>
+          <p class="stat-value" id="sum-avg-odds">0</p>
+        </div>
+        <div class="panel summary-card">
+          <p class="stat-label" data-i18n="monthTotal">Month total (1 unit stake)</p>
+          <p class="stat-value" id="sum-month-total">0</p>
+        </div>
+      </div>
+
+      <div class="panel table-panel">
+        <div class="table-scroll">
+          <table class="history-table" aria-describedby="history-month-label">
+            <thead>
+              <tr>
+                <th data-i18n="colDateTime">Date / time</th>
+                <th data-i18n="colLeague">League</th>
+                <th data-i18n="colMatch">Match</th>
+                <th data-i18n="colLine">Line</th>
+                <th data-i18n="colProbability">Probability</th>
+                <th data-i18n="colOdds">Odds</th>
+                <th data-i18n="colFinalCorners">Final corners</th>
+                <th data-i18n="colStatus">Status</th>
+              </tr>
+            </thead>
+            <tbody id="history-tbody">
+            </tbody>
+          </table>
+        </div>
+        <p id="history-empty" class="empty-state" hidden data-i18n="noHistory">No published results for this month yet.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <a href="mailto:quietlogicapps@gmail.com" data-i18n="contact">Contact</a>
+        <span aria-hidden="true"> · </span>
+        <span>18+</span>
+        <span aria-hidden="true"> · </span>
+        <span data-i18n="gambleResponsibly">Gamble responsibly</span>
+        <span aria-hidden="true"> · </span>
+        <span data-i18n="disclaimer">This website provides statistical analysis, does not guarantee profit and does not accept bets.</span>
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

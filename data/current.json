@@ -1,0 +1,117 @@
+{
+  "month": "2026-10",
+  "stats": {
+    "hitRate": 75,
+    "backtest": 8,
+    "win": 6,
+    "lost": 2,
+    "leagues": [
+      { "name": "Premier League", "hitRate": 75 },
+      { "name": "La Liga", "hitRate": 50 },
+      { "name": "Serie A", "hitRate": 0 },
+      { "name": "Bundesliga", "hitRate": 100 }
+    ]
+  },
+  "signals": [],
+  "history": {
+    "monthLabel": "October 2026",
+    "summary": {
+      "totalPredictions": 8,
+      "win": 6,
+      "lost": 2,
+      "hitRate": 75,
+      "averageOdds": 1.866,
+      "monthTotal": 3
+    },
+    "predictions": [
+      {
+        "kickoffUtc": "2026-10-25T15:30:00Z",
+        "league": "Premier League",
+        "home": "Sunderland",
+        "away": "Leeds",
+        "line": "9+",
+        "probability": 62.9,
+        "odds": 2.1,
+        "finalCorners": 9,
+        "status": "LOST"
+      },
+      {
+        "kickoffUtc": "2026-10-25T13:00:00Z",
+        "league": "Premier League",
+        "home": "Crystal Palace",
+        "away": "Newcastle",
+        "line": "9+",
+        "probability": 54.38,
+        "odds": 1.8,
+        "finalCorners": 11,
+        "status": "WIN"
+      },
+      {
+        "kickoffUtc": "2026-10-24T16:30:00Z",
+        "league": "La Liga",
+        "home": "Valencia",
+        "away": "Villarreal",
+        "line": "9+",
+        "probability": 58.43,
+        "odds": 1.83,
+        "finalCorners": 15,
+        "status": "WIN"
+      },
+      {
+        "kickoffUtc": "2026-10-24T16:30:00Z",
+        "league": "Bundesliga",
+        "home": "Dortmund",
+        "away": "Eintracht",
+        "line": "9+",
+        "probability": 53.75,
+        "odds": 1.83,
+        "finalCorners": 14,
+        "status": "WIN"
+      },
+      {
+        "kickoffUtc": "2026-10-24T14:00:00Z",
+        "league": "Premier League",
+        "home": "Arsenal",
+        "away": "Everton",
+        "line": "9+",
+        "probability": 53.2,
+        "odds": 1.72,
+        "finalCorners": 15,
+        "status": "WIN"
+      },
+      {
+        "kickoffUtc": "2026-10-24T12:00:00Z",
+        "league": "La Liga",
+        "home": "Rayo Vallecano",
+        "away": "Elche",
+        "line": "9+",
+        "probability": 55.03,
+        "odds": 1.83,
+        "finalCorners": 6,
+        "status": "LOST"
+      },
+      {
+        "kickoffUtc": "2026-10-24T11:30:00Z",
+        "league": "Premier League",
+        "home": "Aston Villa",
+        "away": "Manchester City",
+        "line": "9+",
+        "probability": 60.92,
+        "odds": 1.72,
+        "finalCorners": 11,
+        "status": "WIN"
+      },
+      {
+        "kickoffUtc": "2026-10-23T18:30:00Z",
+        "league": "Bundesliga",
+        "home": "Stuttgart",
+        "away": "Monchengladbach",
+        "line": "9+",
+        "probability": 53.98,
+        "odds": 2.1,
+        "finalCorners": 11,
+        "status": "WIN"
+      }
+    ]
+  }
+}

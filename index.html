@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Corner Edge — Bet Assistant. Football corners statistical analysis." />
+  <title>Corner Edge — Bet Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Corner Edge home">
+        <span class="brand-logo" aria-hidden="true">CE</span>
+        <span class="brand-text">
+          <span class="brand-name">Corner Edge</span>
+          <span class="brand-tag">Bet Assistant</span>
+        </span>
+      </a>
+      <div class="lang-wrap">
+        <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+          <span id="lang-label">EN</span>
+          <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+            <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </button>
+        <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="main-col" aria-labelledby="page-title">
+        <p class="section-kicker" data-i18n="matchAnalysis">MATCH ANALYSIS</p>
+        <h1 id="page-title" class="page-title" data-i18n="pageTitle">Selected signals for upcoming matches.</h1>
+        <p class="page-subtitle" data-i18n="pageSubtitle">Corners — expected value, line and probability.</p>
+
+        <div class="panel signals-panel">
+          <h2 class="panel-title" data-i18n="currentSignals">Current signals</h2>
+          <div id="signals-list" class="signals-list" aria-live="polite"></div>
+          <p id="signals-empty" class="signals-empty" hidden data-i18n="noSignals">There are no upcoming signals published at the moment.</p>
+        </div>
+      </section>
+
+      <aside class="side-col" aria-label="Public statistics">
+        <div class="panel stat-card">
+          <p class="stat-label" data-i18n="hitRate">Hit rate</p>
+          <p class="stat-value" id="stat-hit-rate">0%</p>
+        </div>
+
+        <div class="panel stat-card">
+          <p class="stat-label" data-i18n="backtest">Backtest</p>
+          <p class="stat-value" id="stat-backtest">0</p>
+          <p class="stat-hint" data-i18n="signals">signals</p>
+        </div>
+
+        <a class="panel history-card" href="history.html" id="history-card">
+          <p class="stat-label" data-i18n="history">History</p>
+          <div class="history-row">
+            <span class="history-win"><span data-i18n="win">WIN</span> <strong id="stat-win">0</strong></span>
+            <span class="history-lost"><span data-i18n="lost">LOST</span> <strong id="stat-lost">0</strong></span>
+          </div>
+        </a>
+
+        <div class="panel league-card">
+          <p class="stat-label" data-i18n="backtestByLeague">Backtest by league</p>
+          <ul id="league-list" class="league-list"></ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <a href="mailto:quietlogicapps@gmail.com" data-i18n="contact">Contact</a>
+        <span aria-hidden="true"> · </span>
+        <span>18+</span>
+        <span aria-hidden="true"> · </span>
+        <span data-i18n="gambleResponsibly">Gamble responsibly</span>
+        <span aria-hidden="true"> · </span>
+        <span data-i18n="disclaimer">This website provides statistical analysis, does not guarantee profit and does not accept bets.</span>
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
