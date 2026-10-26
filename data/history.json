@@ -65,6 +65,17 @@
       "odds": 1.83,
       "finalCorners": 6,
       "status": "LOST"
+    },
+    {
+      "kickoffUtc": "2026-10-24T11:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Manchester City",
+      "line": "9+",
+      "probability": 60.92,
+      "odds": 1.72,
+      "finalCorners": 11,
+      "status": "WIN"
     }
   ]
 }
