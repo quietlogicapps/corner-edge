@@ -10,6 +10,17 @@
       "odds": 2.1,
       "finalCorners": 9,
       "status": "LOST"
+    },
+    {
+      "kickoffUtc": "2026-10-25T14:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Crystal Palace",
+      "awayTeam": "Newcastle",
+      "line": "9+",
+      "probability": 54.38,
+      "odds": 1.8,
+      "finalCorners": 11,
+      "status": "WIN"
     }
   ]
 }
