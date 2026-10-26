@@ -681,23 +681,38 @@
       .join("");
   }
 
-  function mergeHistoryPredictions(base, published) {
-    const baseList = Array.isArray(base) ? base.slice() : [];
-    const pubList = Array.isArray(published) ? published : [];
-    if (!pubList.length) return baseList;
-    const out = [];
-    const used = new Set();
-    pubList.forEach((p) => {
-      const id = p && p.localFixtureId;
-      if (id != null) used.add(Number(id));
-      out.push(p);
+  function summaryFromPredictions(predictions) {
+    const rows = Array.isArray(predictions) ? predictions : [];
+    let win = 0;
+    let lost = 0;
+    let oddsSum = 0;
+    let oddsCount = 0;
+    let monthTotal = 0;
+    rows.forEach((p) => {
+      const status = String(p.status || "").toUpperCase();
+      const oddsOk = hasOdds(p.odds);
+      const odds = oddsOk ? Number(p.odds) : null;
+      if (status === "WIN" || status === "SUCCESSFUL") {
+        win += 1;
+        if (oddsOk) monthTotal += odds - 1;
+      } else if (status === "LOST") {
+        lost += 1;
+        if (oddsOk) monthTotal -= 1;
+      }
+      if (oddsOk) {
+        oddsSum += odds;
+        oddsCount += 1;
+      }
     });
-    baseList.forEach((p) => {
-      const id = p && p.localFixtureId;
-      if (id != null && used.has(Number(id))) return;
-      out.push(p);
-    });
-    return out;
+    const total = rows.length;
+    return {
+      totalPredictions: total,
+      win,
+      lost,
+      hitRate: total ? (win / total) * 100 : 0,
+      averageOdds: oddsCount ? oddsSum / oddsCount : 0,
+      monthTotal,
+    };
   }
 
   function getHistoryBundle(mode) {
@@ -708,12 +723,16 @@
         predictions: (state.previous && state.previous.predictions) || [],
       };
     }
-    const hist = (state.current && state.current.history) || {};
-    const published = (state.publishedHistory && state.publishedHistory.predictions) || [];
+    // Current month: only published rows from data/history.json (no demo/hardcoded merge).
+    const published = state.publishedHistory || {};
+    const predictions = Array.isArray(published.predictions) ? published.predictions : [];
     return {
-      monthLabel: hist.monthLabel || (state.current && state.current.month) || "Current month",
-      summary: hist.summary || {},
-      predictions: mergeHistoryPredictions(hist.predictions || [], published),
+      monthLabel:
+        published.monthLabel ||
+        (state.current && state.current.month) ||
+        "Current month",
+      summary: published.summary || summaryFromPredictions(predictions),
+      predictions,
     };
   }
 
