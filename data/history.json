@@ -43,6 +43,17 @@
       "odds": 1.83,
       "finalCorners": 14,
       "status": "WIN"
+    },
+    {
+      "kickoffUtc": "2026-10-24T14:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Arsenal",
+      "awayTeam": "Everton",
+      "line": "9+",
+      "probability": 53.2,
+      "odds": 1.72,
+      "finalCorners": 15,
+      "status": "WIN"
     }
   ]
 }
