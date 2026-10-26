@@ -32,6 +32,17 @@
       "odds": 1.83,
       "finalCorners": 15,
       "status": "WIN"
+    },
+    {
+      "kickoffUtc": "2026-10-24T16:30:00Z",
+      "league": "Bundesliga",
+      "homeTeam": "Dortmund",
+      "awayTeam": "Eintracht",
+      "line": "9+",
+      "probability": 53.75,
+      "odds": 1.83,
+      "finalCorners": 14,
+      "status": "WIN"
     }
   ]
 }
