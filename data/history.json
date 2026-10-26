@@ -21,6 +21,17 @@
       "odds": 1.8,
       "finalCorners": 11,
       "status": "WIN"
+    },
+    {
+      "kickoffUtc": "2026-10-24T16:30:00Z",
+      "league": "La Liga",
+      "homeTeam": "Valencia",
+      "awayTeam": "Villarreal",
+      "line": "9+",
+      "probability": 58.43,
+      "odds": 1.83,
+      "finalCorners": 15,
+      "status": "WIN"
     }
   ]
 }
