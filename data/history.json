@@ -54,6 +54,17 @@
       "odds": 1.72,
       "finalCorners": 15,
       "status": "WIN"
+    },
+    {
+      "kickoffUtc": "2026-10-24T12:00:00Z",
+      "league": "La Liga",
+      "homeTeam": "Rayo Vallecano",
+      "awayTeam": "Elche",
+      "line": "9+",
+      "probability": 55.03,
+      "odds": 1.83,
+      "finalCorners": 6,
+      "status": "LOST"
     }
   ]
 }
