@@ -6,10 +6,22 @@
     "win": 6,
     "lost": 2,
     "leagues": [
-      { "name": "Premier League", "hitRate": 75 },
-      { "name": "La Liga", "hitRate": 50 },
-      { "name": "Serie A", "hitRate": 0 },
-      { "name": "Bundesliga", "hitRate": 100 }
+      {
+        "name": "Premier League",
+        "hitRate": 75
+      },
+      {
+        "name": "La Liga",
+        "hitRate": 50
+      },
+      {
+        "name": "Serie A",
+        "hitRate": 0
+      },
+      {
+        "name": "Bundesliga",
+        "hitRate": 100
+      }
     ]
   },
   "signals": [],

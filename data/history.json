@@ -1,3 +1,15 @@
 {
-  "predictions": []
+  "predictions": [
+    {
+      "kickoffUtc": "2026-10-25T16:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Sunderland",
+      "awayTeam": "Leeds",
+      "line": "9+",
+      "probability": 62.9,
+      "odds": 2.1,
+      "finalCorners": 9,
+      "status": "LOST"
+    }
+  ]
 }
