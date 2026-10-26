@@ -76,6 +76,17 @@
       "odds": 1.72,
       "finalCorners": 11,
       "status": "WIN"
+    },
+    {
+      "kickoffUtc": "2026-10-23T18:30:00Z",
+      "league": "Bundesliga",
+      "homeTeam": "Stuttgart",
+      "awayTeam": "Monchengladbach",
+      "line": "9+",
+      "probability": 53.98,
+      "odds": 2.1,
+      "finalCorners": 11,
+      "status": "WIN"
     }
   ]
 }
