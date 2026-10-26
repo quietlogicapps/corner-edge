@@ -627,7 +627,7 @@
       row.innerHTML = `
         <div class="signal-meta">
           <p class="league">${escapeHtml(s.league || "")} - ${t("cornersSuffix")}</p>
-          <p class="teams">${escapeHtml(s.home || "")} — ${escapeHtml(s.away || "")}</p>
+          <p class="teams">${escapeHtml(s.homeTeam || s.home || "")} — ${escapeHtml(s.awayTeam || s.away || "")}</p>
           <p class="when">${escapeHtml(formatKickoff(kickoffValue(s)))}</p>
         </div>
         <div class="signal-metrics">
@@ -681,6 +681,25 @@
       .join("");
   }
 
+  function mergeHistoryPredictions(base, published) {
+    const baseList = Array.isArray(base) ? base.slice() : [];
+    const pubList = Array.isArray(published) ? published : [];
+    if (!pubList.length) return baseList;
+    const out = [];
+    const used = new Set();
+    pubList.forEach((p) => {
+      const id = p && p.localFixtureId;
+      if (id != null) used.add(Number(id));
+      out.push(p);
+    });
+    baseList.forEach((p) => {
+      const id = p && p.localFixtureId;
+      if (id != null && used.has(Number(id))) return;
+      out.push(p);
+    });
+    return out;
+  }
+
   function getHistoryBundle(mode) {
     if (mode === "previous") {
       return {
@@ -690,10 +709,11 @@
       };
     }
     const hist = (state.current && state.current.history) || {};
+    const published = (state.publishedHistory && state.publishedHistory.predictions) || [];
     return {
       monthLabel: hist.monthLabel || (state.current && state.current.month) || "Current month",
       summary: hist.summary || {},
-      predictions: hist.predictions || [],
+      predictions: mergeHistoryPredictions(hist.predictions || [], published),
     };
   }
 
@@ -742,7 +762,7 @@
       tr.innerHTML = `
         <td>${escapeHtml(formatKickoff(kickoffValue(p)))}</td>
         <td>${escapeHtml(p.league || "—")}</td>
-        <td>${escapeHtml(p.home || "")} — ${escapeHtml(p.away || "")}</td>
+        <td>${escapeHtml(p.homeTeam || p.home || "")} — ${escapeHtml(p.awayTeam || p.away || "")}</td>
         <td>${escapeHtml(p.line || "—")}</td>
         <td>${formatProbability(p.probability)}</td>
         <td>${oddsText}</td>
@@ -868,12 +888,14 @@
     document.body.dataset.page = page;
 
     try {
-      const [current, previous] = await Promise.all([
+      const [current, previous, publishedHistory] = await Promise.all([
         loadJson("data/current.json"),
         loadJson("data/previous.json"),
+        loadJson("data/history.json").catch(() => ({ predictions: [] })),
       ]);
       state.current = current;
       state.previous = previous;
+      state.publishedHistory = publishedHistory || { predictions: [] };
     } catch (err) {
       console.error(err);
       state.current = {
@@ -915,6 +937,7 @@
         },
         predictions: [],
       };
+      state.publishedHistory = { predictions: [] };
     }
 
     if (page === "history") {
