@@ -24,7 +24,18 @@
       }
     ]
   },
-  "signals": [],
+  "signals": [
+    {
+      "kickoffUtc": "2026-10-30T20:00:00Z",
+      "league": "La Liga",
+      "homeTeam": "Villarreal",
+      "awayTeam": "Espanyol",
+      "line": "9+",
+      "probability": 57.74,
+      "odds": 1.83,
+      "signal": "SIGNAL"
+    }
+  ],
   "history": {
     "monthLabel": "October 2026",
     "summary": {
