@@ -350,10 +350,15 @@ button {
   word-break: break-word;
 }
 
-.signal-meta .when {
+.signal-meta .when,
+.when {
   margin: 0.35rem 0 0;
   color: var(--muted-soft);
   font-size: 0.82rem;
+}
+
+.history-table .when {
+  margin: 0.25rem 0 0;
 }
 
 .signal-metrics {

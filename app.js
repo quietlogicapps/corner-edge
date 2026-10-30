@@ -84,6 +84,7 @@
       colOdds: "Odds",
       colFinalCorners: "Final corners",
       colStatus: "Status",
+      published: "Published",
     },
     bg: {
       matchAnalysis: "АНАЛИЗ НА МАЧОВЕ",
@@ -126,6 +127,7 @@
       colOdds: "Коеф.",
       colFinalCorners: "Крайни корнери",
       colStatus: "Статус",
+      published: "Публикуван",
     },
     es: {
       matchAnalysis: "ANÁLISIS DEL PARTIDO",
@@ -168,6 +170,7 @@
       colOdds: "Cuota",
       colFinalCorners: "Córners finales",
       colStatus: "Estado",
+      published: "Publicado",
     },
     "pt-BR": {
       matchAnalysis: "ANÁLISE DA PARTIDA",
@@ -210,6 +213,7 @@
       colOdds: "Odd",
       colFinalCorners: "Escanteios finais",
       colStatus: "Status",
+      published: "Publicado",
     },
     de: {
       matchAnalysis: "SPIELANALYSE",
@@ -252,6 +256,7 @@
       colOdds: "Quote",
       colFinalCorners: "Endgültige Ecken",
       colStatus: "Status",
+      published: "Veröffentlicht",
     },
     fr: {
       matchAnalysis: "ANALYSE DU MATCH",
@@ -294,6 +299,7 @@
       colOdds: "Cote",
       colFinalCorners: "Corners finaux",
       colStatus: "Statut",
+      published: "Publié",
     },
     it: {
       matchAnalysis: "ANALISI DELLA PARTITA",
@@ -336,6 +342,7 @@
       colOdds: "Quota",
       colFinalCorners: "Corner finali",
       colStatus: "Stato",
+      published: "Pubblicato",
     },
     tr: {
       matchAnalysis: "MAÇ ANALİZİ",
@@ -378,6 +385,7 @@
       colOdds: "Oran",
       colFinalCorners: "Final korner",
       colStatus: "Durum",
+      published: "Yayınlandı",
     },
     pl: {
       matchAnalysis: "ANALIZA MECZU",
@@ -420,6 +428,7 @@
       colOdds: "Kurs",
       colFinalCorners: "Końcowe rożne",
       colStatus: "Status",
+      published: "Opublikowano",
     },
     ru: {
       matchAnalysis: "АНАЛИЗ МАТЧА",
@@ -462,6 +471,7 @@
       colOdds: "Коэф.",
       colFinalCorners: "Итоговые угловые",
       colStatus: "Статус",
+      published: "Опубликовано",
     },
   };
 
@@ -583,6 +593,14 @@
     return item && (item.kickoffUtc || item.kickoff || item.datetime);
   }
 
+  function publishedAtMarkup(item) {
+    const raw = item && item.publishedAtUtc;
+    if (!raw) return "";
+    const formatted = formatKickoff(raw);
+    if (!formatted || formatted === "—") return "";
+    return `<p class="when published-at">${escapeHtml(`${t("published")}: ${formatted}`)}</p>`;
+  }
+
   function hasOdds(odds) {
     return odds !== null && odds !== undefined && odds !== "" && !Number.isNaN(Number(odds));
   }
@@ -629,6 +647,7 @@
           <p class="league">${escapeHtml(s.league || "")} - ${t("cornersSuffix")}</p>
           <p class="teams">${escapeHtml(s.homeTeam || s.home || "")} — ${escapeHtml(s.awayTeam || s.away || "")}</p>
           <p class="when">${escapeHtml(formatKickoff(kickoffValue(s)))}</p>
+          ${publishedAtMarkup(s)}
         </div>
         <div class="signal-metrics">
           <div>
@@ -779,7 +798,7 @@
       const oddsText = hasOdds(p.odds) ? formatNumber(Number(p.odds), 2) : t("noBet");
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td>${escapeHtml(formatKickoff(kickoffValue(p)))}</td>
+        <td>${escapeHtml(formatKickoff(kickoffValue(p)))}${publishedAtMarkup(p)}</td>
         <td>${escapeHtml(p.league || "—")}</td>
         <td>${escapeHtml(p.homeTeam || p.home || "")} — ${escapeHtml(p.awayTeam || p.away || "")}</td>
         <td>${escapeHtml(p.line || "—")}</td>
