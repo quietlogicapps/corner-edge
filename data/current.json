@@ -34,6 +34,17 @@
       "probability": 57.74,
       "odds": 1.83,
       "signal": "SIGNAL"
+    },
+    {
+      "kickoffUtc": "2026-10-31T15:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Bournemouth",
+      "awayTeam": "Leeds",
+      "line": "9+",
+      "probability": 63.55,
+      "odds": 1.9,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-10-30T16:06:20Z"
     }
   ],
   "history": {
