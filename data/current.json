@@ -56,6 +56,17 @@
       "odds": 1.72,
       "signal": "SIGNAL",
       "publishedAtUtc": "2026-10-30T16:21:31Z"
+    },
+    {
+      "kickoffUtc": "2026-10-31T20:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Fulham",
+      "line": "9+",
+      "probability": 55.33,
+      "odds": 1.72,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-10-30T16:39:52Z"
     }
   ],
   "history": {
