@@ -26,16 +26,6 @@
   },
   "signals": [
     {
-      "kickoffUtc": "2026-10-30T20:00:00Z",
-      "league": "La Liga",
-      "homeTeam": "Villarreal",
-      "awayTeam": "Espanyol",
-      "line": "9+",
-      "probability": 57.74,
-      "odds": 1.83,
-      "signal": "SIGNAL"
-    },
-    {
       "kickoffUtc": "2026-10-31T15:00:00Z",
       "league": "Premier League",
       "homeTeam": "Bournemouth",
