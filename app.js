@@ -85,6 +85,8 @@
       colFinalCorners: "Final corners",
       colStatus: "Status",
       published: "Published",
+      sinceStart: "Since the beginning",
+      thisMonth: "This month",
     },
     bg: {
       matchAnalysis: "АНАЛИЗ НА МАЧОВЕ",
@@ -128,6 +130,8 @@
       colFinalCorners: "Крайни корнери",
       colStatus: "Статус",
       published: "Публикуван",
+      sinceStart: "От началото",
+      thisMonth: "Този месец",
     },
     es: {
       matchAnalysis: "ANÁLISIS DEL PARTIDO",
@@ -171,6 +175,8 @@
       colFinalCorners: "Córners finales",
       colStatus: "Estado",
       published: "Publicado",
+      sinceStart: "Desde el inicio",
+      thisMonth: "Este mes",
     },
     "pt-BR": {
       matchAnalysis: "ANÁLISE DA PARTIDA",
@@ -214,6 +220,8 @@
       colFinalCorners: "Escanteios finais",
       colStatus: "Status",
       published: "Publicado",
+      sinceStart: "Desde o início",
+      thisMonth: "Este mês",
     },
     de: {
       matchAnalysis: "SPIELANALYSE",
@@ -257,6 +265,8 @@
       colFinalCorners: "Endgültige Ecken",
       colStatus: "Status",
       published: "Veröffentlicht",
+      sinceStart: "Seit Beginn",
+      thisMonth: "Dieser Monat",
     },
     fr: {
       matchAnalysis: "ANALYSE DU MATCH",
@@ -300,6 +310,8 @@
       colFinalCorners: "Corners finaux",
       colStatus: "Statut",
       published: "Publié",
+      sinceStart: "Depuis le début",
+      thisMonth: "Ce mois-ci",
     },
     it: {
       matchAnalysis: "ANALISI DELLA PARTITA",
@@ -343,6 +355,8 @@
       colFinalCorners: "Corner finali",
       colStatus: "Stato",
       published: "Pubblicato",
+      sinceStart: "Dall'inizio",
+      thisMonth: "Questo mese",
     },
     tr: {
       matchAnalysis: "MAÇ ANALİZİ",
@@ -386,6 +400,8 @@
       colFinalCorners: "Final korner",
       colStatus: "Durum",
       published: "Yayınlandı",
+      sinceStart: "Başından beri",
+      thisMonth: "Bu ay",
     },
     pl: {
       matchAnalysis: "ANALIZA MECZU",
@@ -429,6 +445,8 @@
       colFinalCorners: "Końcowe rożne",
       colStatus: "Status",
       published: "Opublikowano",
+      sinceStart: "Od początku",
+      thisMonth: "Ten miesiąc",
     },
     ru: {
       matchAnalysis: "АНАЛИЗ МАТЧА",
@@ -472,6 +490,8 @@
       colFinalCorners: "Итоговые угловые",
       colStatus: "Статус",
       published: "Опубликовано",
+      sinceStart: "С начала",
+      thisMonth: "Этот месяц",
     },
   };
 
@@ -701,11 +721,43 @@
 
   const HOME_LEAGUE_ORDER = ["Premier League", "La Liga", "Serie A", "Bundesliga"];
 
+  function yearMonthInDeviceTz(date) {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: getDeviceTimeZone(),
+      year: "numeric",
+      month: "2-digit",
+    }).formatToParts(date);
+    const year = (parts.find((p) => p.type === "year") || {}).value || "";
+    const month = (parts.find((p) => p.type === "month") || {}).value || "";
+    return year && month ? `${year}-${month}` : "";
+  }
+
+  function isKickoffInDeviceMonth(iso) {
+    const date = new Date(iso);
+    if (Number.isNaN(date.getTime())) return false;
+    return yearMonthInDeviceTz(date) === yearMonthInDeviceTz(new Date());
+  }
+
+  function tallySettled(predictions) {
+    let win = 0;
+    let lost = 0;
+    (Array.isArray(predictions) ? predictions : []).forEach((p) => {
+      const status = String(p.status || "").toUpperCase();
+      if (status === "WIN" || status === "SUCCESSFUL") win += 1;
+      else if (status === "LOST" || status === "UNSUCCESSFUL") lost += 1;
+    });
+    const settled = win + lost;
+    return {
+      count: Array.isArray(predictions) ? predictions.length : 0,
+      win,
+      lost,
+      hitRate: settled ? (win / settled) * 100 : 0,
+    };
+  }
+
   function homeStatsFromHistory(historyData) {
     const predictions =
       historyData && Array.isArray(historyData.predictions) ? historyData.predictions : [];
-    let win = 0;
-    let lost = 0;
     const byLeague = {};
     HOME_LEAGUE_ORDER.forEach((name) => {
       byLeague[name] = { win: 0, total: 0 };
@@ -717,17 +769,17 @@
       if (!byLeague[league]) byLeague[league] = { win: 0, total: 0 };
 
       if (status === "WIN" || status === "SUCCESSFUL") {
-        win += 1;
         byLeague[league].win += 1;
         byLeague[league].total += 1;
       } else if (status === "LOST" || status === "UNSUCCESSFUL") {
-        lost += 1;
         byLeague[league].total += 1;
       }
     });
 
-    const settled = win + lost;
-    const hitRate = settled ? (win / settled) * 100 : 0;
+    const all = tallySettled(predictions);
+    const monthPreds = predictions.filter((p) => isKickoffInDeviceMonth(kickoffValue(p)));
+    const month = tallySettled(monthPreds);
+
     const leagues = HOME_LEAGUE_ORDER.map((name) => {
       const row = byLeague[name] || { win: 0, total: 0 };
       return {
@@ -737,10 +789,14 @@
     });
 
     return {
-      hitRate,
-      backtest: predictions.length,
-      win,
-      lost,
+      hitRate: all.hitRate,
+      backtest: all.count,
+      win: all.win,
+      lost: all.lost,
+      monthHitRate: month.hitRate,
+      monthBacktest: month.count,
+      monthWin: month.win,
+      monthLost: month.lost,
       leagues,
     };
   }
@@ -755,11 +811,19 @@
     const backtest = document.getElementById("stat-backtest");
     const win = document.getElementById("stat-win");
     const lost = document.getElementById("stat-lost");
+    const hitMonth = document.getElementById("stat-hit-rate-month");
+    const backtestMonth = document.getElementById("stat-backtest-month");
+    const winMonth = document.getElementById("stat-win-month");
+    const lostMonth = document.getElementById("stat-lost-month");
 
     if (hit) hit.textContent = formatHitRate(s.hitRate);
     if (backtest) backtest.textContent = formatNumber(s.backtest || 0, 0);
     if (win) win.textContent = formatNumber(s.win || 0, 0);
     if (lost) lost.textContent = formatNumber(s.lost || 0, 0);
+    if (hitMonth) hitMonth.textContent = formatHitRate(s.monthHitRate);
+    if (backtestMonth) backtestMonth.textContent = formatNumber(s.monthBacktest || 0, 0);
+    if (winMonth) winMonth.textContent = formatNumber(s.monthWin || 0, 0);
+    if (lostMonth) lostMonth.textContent = formatNumber(s.monthLost || 0, 0);
 
     const leagueList = document.getElementById("league-list");
     if (!leagueList) return;
