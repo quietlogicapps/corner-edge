@@ -85,7 +85,7 @@
       colFinalCorners: "Final corners",
       colStatus: "Status",
       published: "Published",
-      sinceStart: "Since the beginning",
+      sinceStart: "All time",
       thisMonth: "This month",
     },
     bg: {
@@ -130,7 +130,7 @@
       colFinalCorners: "Крайни корнери",
       colStatus: "Статус",
       published: "Публикуван",
-      sinceStart: "От началото",
+      sinceStart: "Общо",
       thisMonth: "Този месец",
     },
     es: {
@@ -175,7 +175,7 @@
       colFinalCorners: "Córners finales",
       colStatus: "Estado",
       published: "Publicado",
-      sinceStart: "Desde el inicio",
+      sinceStart: "Total",
       thisMonth: "Este mes",
     },
     "pt-BR": {
@@ -220,7 +220,7 @@
       colFinalCorners: "Escanteios finais",
       colStatus: "Status",
       published: "Publicado",
-      sinceStart: "Desde o início",
+      sinceStart: "Geral",
       thisMonth: "Este mês",
     },
     de: {
@@ -265,7 +265,7 @@
       colFinalCorners: "Endgültige Ecken",
       colStatus: "Status",
       published: "Veröffentlicht",
-      sinceStart: "Seit Beginn",
+      sinceStart: "Gesamt",
       thisMonth: "Dieser Monat",
     },
     fr: {
@@ -310,7 +310,7 @@
       colFinalCorners: "Corners finaux",
       colStatus: "Statut",
       published: "Publié",
-      sinceStart: "Depuis le début",
+      sinceStart: "Total",
       thisMonth: "Ce mois-ci",
     },
     it: {
@@ -355,7 +355,7 @@
       colFinalCorners: "Corner finali",
       colStatus: "Stato",
       published: "Pubblicato",
-      sinceStart: "Dall'inizio",
+      sinceStart: "Totale",
       thisMonth: "Questo mese",
     },
     tr: {
@@ -400,7 +400,7 @@
       colFinalCorners: "Final korner",
       colStatus: "Durum",
       published: "Yayınlandı",
-      sinceStart: "Başından beri",
+      sinceStart: "Toplam",
       thisMonth: "Bu ay",
     },
     pl: {
@@ -445,7 +445,7 @@
       colFinalCorners: "Końcowe rożne",
       colStatus: "Status",
       published: "Opublikowano",
-      sinceStart: "Od początku",
+      sinceStart: "Ogółem",
       thisMonth: "Ten miesiąc",
     },
     ru: {
@@ -490,7 +490,7 @@
       colFinalCorners: "Итоговые угловые",
       colStatus: "Статус",
       published: "Опубликовано",
-      sinceStart: "С начала",
+      sinceStart: "Всего",
       thisMonth: "Этот месяц",
     },
   };
