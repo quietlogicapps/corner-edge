@@ -634,6 +634,21 @@
     });
   }
 
+  function sortHistoryByKickoffDesc(predictions) {
+    return predictions.slice().sort((a, b) => {
+      const kickA = String(kickoffValue(a) || "");
+      const kickB = String(kickoffValue(b) || "");
+      if (kickA !== kickB) return kickA > kickB ? -1 : 1;
+      const homeA = String(a.homeTeam || a.home || "");
+      const homeB = String(b.homeTeam || b.home || "");
+      if (homeA !== homeB) return homeA < homeB ? -1 : 1;
+      const awayA = String(a.awayTeam || a.away || "");
+      const awayB = String(b.awayTeam || b.away || "");
+      if (awayA !== awayB) return awayA < awayB ? -1 : 1;
+      return 0;
+    });
+  }
+
   function renderSignals(signals) {
     const list = document.getElementById("signals-list");
     const empty = document.getElementById("signals-empty");
@@ -848,7 +863,7 @@
     const empty = document.getElementById("history-empty");
     if (!tbody) return;
 
-    const rows = Array.isArray(predictions) ? predictions : [];
+    const rows = sortHistoryByKickoffDesc(Array.isArray(predictions) ? predictions : []);
     tbody.innerHTML = "";
 
     if (!rows.length) {
