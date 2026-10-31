@@ -684,6 +684,56 @@
     });
   }
 
+  const HOME_LEAGUE_ORDER = ["Premier League", "La Liga", "Serie A", "Bundesliga"];
+
+  function homeStatsFromHistory(historyData) {
+    const predictions =
+      historyData && Array.isArray(historyData.predictions) ? historyData.predictions : [];
+    let win = 0;
+    let lost = 0;
+    const byLeague = {};
+    HOME_LEAGUE_ORDER.forEach((name) => {
+      byLeague[name] = { win: 0, total: 0 };
+    });
+
+    predictions.forEach((p) => {
+      const status = String(p.status || "").toUpperCase();
+      const league = String(p.league || "");
+      if (!byLeague[league]) byLeague[league] = { win: 0, total: 0 };
+
+      if (status === "WIN" || status === "SUCCESSFUL") {
+        win += 1;
+        byLeague[league].win += 1;
+        byLeague[league].total += 1;
+      } else if (status === "LOST" || status === "UNSUCCESSFUL") {
+        lost += 1;
+        byLeague[league].total += 1;
+      }
+    });
+
+    const settled = win + lost;
+    const hitRate = settled ? (win / settled) * 100 : 0;
+    const leagues = HOME_LEAGUE_ORDER.map((name) => {
+      const row = byLeague[name] || { win: 0, total: 0 };
+      return {
+        name,
+        hitRate: row.total ? (row.win / row.total) * 100 : 0,
+      };
+    });
+
+    return {
+      hitRate,
+      backtest: predictions.length,
+      win,
+      lost,
+      leagues,
+    };
+  }
+
+  function renderHomeStats() {
+    renderStats(homeStatsFromHistory(state.publishedHistory));
+  }
+
   function renderStats(stats) {
     const s = stats || {};
     const hit = document.getElementById("stat-hit-rate");
@@ -923,7 +973,7 @@
     if (page === "history") {
       renderHistoryPage();
     } else if (state.current) {
-      renderStats(state.current.stats);
+      renderHomeStats();
       renderSignals(state.current.signals);
     }
   }
@@ -997,7 +1047,7 @@
       setupHistoryControls();
       renderHistoryPage();
     } else {
-      renderStats(state.current.stats);
+      renderHomeStats();
       renderSignals(state.current.signals);
     }
   }
