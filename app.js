@@ -878,23 +878,49 @@
     };
   }
 
+  function deviceYearMonthNow() {
+    return yearMonthInDeviceTz(new Date());
+  }
+
+  function shiftYearMonth(ym, deltaMonths) {
+    const parts = String(ym || "").split("-");
+    const year = Number(parts[0]);
+    const month = Number(parts[1]);
+    if (!year || !month) return "";
+    const shifted = new Date(Date.UTC(year, month - 1 + deltaMonths, 1));
+    const y = shifted.getUTCFullYear();
+    const m = String(shifted.getUTCMonth() + 1).padStart(2, "0");
+    return `${y}-${m}`;
+  }
+
+  function monthLabelFromYm(ym) {
+    const parts = String(ym || "").split("-");
+    const year = Number(parts[0]);
+    const month = Number(parts[1]);
+    if (!year || !month || month < 1 || month > 12) return ym || "—";
+    return `${MONTHS_FULL.en[month - 1]} ${year}`;
+  }
+
+  function filterPredictionsByYearMonth(predictions, ym) {
+    const rows = Array.isArray(predictions) ? predictions : [];
+    if (!ym) return [];
+    return rows.filter((p) => {
+      const iso = kickoffValue(p);
+      const date = new Date(iso);
+      if (Number.isNaN(date.getTime())) return false;
+      return yearMonthInDeviceTz(date) === ym;
+    });
+  }
+
   function getHistoryBundle(mode) {
-    if (mode === "previous") {
-      return {
-        monthLabel: (state.previous && state.previous.monthLabel) || "Previous month",
-        summary: (state.previous && state.previous.summary) || {},
-        predictions: (state.previous && state.previous.predictions) || [],
-      };
-    }
-    // Current month: only published rows from data/history.json (no demo/hardcoded merge).
     const published = state.publishedHistory || {};
-    const predictions = Array.isArray(published.predictions) ? published.predictions : [];
+    const allPredictions = Array.isArray(published.predictions) ? published.predictions : [];
+    const currentYm = deviceYearMonthNow();
+    const targetYm = mode === "previous" ? shiftYearMonth(currentYm, -1) : currentYm;
+    const predictions = filterPredictionsByYearMonth(allPredictions, targetYm);
     return {
-      monthLabel:
-        published.monthLabel ||
-        (state.current && state.current.month) ||
-        "Current month",
-      summary: published.summary || summaryFromPredictions(predictions),
+      monthLabel: monthLabelFromYm(targetYm),
+      summary: summaryFromPredictions(predictions),
       predictions,
     };
   }
