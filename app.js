@@ -950,11 +950,13 @@
 
   function renderHistoryTable(predictions) {
     const tbody = document.getElementById("history-tbody");
+    const cards = document.getElementById("history-cards");
     const empty = document.getElementById("history-empty");
     if (!tbody) return;
 
     const rows = sortHistoryByKickoffDesc(Array.isArray(predictions) ? predictions : []);
     tbody.innerHTML = "";
+    if (cards) cards.innerHTML = "";
 
     if (!rows.length) {
       if (empty) empty.hidden = false;
@@ -966,18 +968,64 @@
       const status = String(p.status || "").toUpperCase();
       const statusClass = status === "WIN" || status === "SUCCESSFUL" ? "status-win" : "status-lost";
       const oddsText = hasOdds(p.odds) ? formatNumber(Number(p.odds), 2) : t("noBet");
+      const matchText = `${p.homeTeam || p.home || ""} — ${p.awayTeam || p.away || ""}`;
+      const kickoffText = formatKickoff(kickoffValue(p));
+      const finalCorners = p.finalCorners == null ? "—" : String(p.finalCorners);
+      const publishedHtml = publishedAtMarkup(p);
+
       const tr = document.createElement("tr");
       tr.innerHTML = `
-        <td>${escapeHtml(formatKickoff(kickoffValue(p)))}${publishedAtMarkup(p)}</td>
+        <td>${escapeHtml(kickoffText)}${publishedHtml}</td>
         <td>${escapeHtml(p.league || "—")}</td>
-        <td>${escapeHtml(p.homeTeam || p.home || "")} — ${escapeHtml(p.awayTeam || p.away || "")}</td>
+        <td>${escapeHtml(matchText)}</td>
         <td>${escapeHtml(p.line || "—")}</td>
         <td>${formatProbability(p.probability)}</td>
         <td>${oddsText}</td>
-        <td>${p.finalCorners == null ? "—" : escapeHtml(p.finalCorners)}</td>
+        <td>${escapeHtml(finalCorners)}</td>
         <td><span class="status-pill ${statusClass}">${escapeHtml(statusLabel(status))}</span></td>
       `;
       tbody.appendChild(tr);
+
+      if (cards) {
+        const card = document.createElement("article");
+        card.className = "history-match-card";
+        card.innerHTML = `
+          <div class="hmc-top">
+            <p class="hmc-match">${escapeHtml(matchText)}</p>
+            <span class="status-pill ${statusClass}">${escapeHtml(statusLabel(status))}</span>
+          </div>
+          <div class="hmc-meta">
+            <p class="hmc-meta-row">
+              <span class="hmc-label">${escapeHtml(t("colDateTime"))}</span>
+              <span class="hmc-text">${escapeHtml(kickoffText)}</span>
+            </p>
+            <p class="hmc-meta-row">
+              <span class="hmc-label">${escapeHtml(t("colLeague"))}</span>
+              <span class="hmc-text">${escapeHtml(p.league || "—")}</span>
+            </p>
+          </div>
+          <div class="hmc-grid">
+            <div class="hmc-cell">
+              <span class="hmc-label">${escapeHtml(t("colLine"))}</span>
+              <span class="hmc-value">${escapeHtml(p.line || "—")}</span>
+            </div>
+            <div class="hmc-cell">
+              <span class="hmc-label">${escapeHtml(t("colProbability"))}</span>
+              <span class="hmc-value">${formatProbability(p.probability)}</span>
+            </div>
+            <div class="hmc-cell">
+              <span class="hmc-label">${escapeHtml(t("colOdds"))}</span>
+              <span class="hmc-value">${oddsText}</span>
+            </div>
+            <div class="hmc-cell">
+              <span class="hmc-label">${escapeHtml(t("colFinalCorners"))}</span>
+              <span class="hmc-value">${escapeHtml(finalCorners)}</span>
+            </div>
+          </div>
+          ${publishedHtml}
+        `;
+        cards.appendChild(card);
+      }
     });
   }
 

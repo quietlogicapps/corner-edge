@@ -658,6 +658,10 @@ button {
   width: 100%;
 }
 
+.history-cards {
+  display: none;
+}
+
 .table-scroll {
   width: 100%;
   max-width: 100%;
@@ -862,6 +866,108 @@ button {
   }
 }
 
+@media (max-width: 640px) {
+  .table-panel {
+    padding: 0.55rem;
+  }
+
+  .table-scroll {
+    display: none;
+  }
+
+  .history-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .history-match-card {
+    padding: 0.85rem 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: rgba(7, 29, 43, 0.35);
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .hmc-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.65rem;
+  }
+
+  .hmc-match {
+    margin: 0;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.3;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .hmc-top .status-pill {
+    flex-shrink: 0;
+  }
+
+  .hmc-meta {
+    margin-top: 0.55rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+  }
+
+  .hmc-meta-row {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.45rem;
+    font-size: 0.84rem;
+    color: var(--text);
+  }
+
+  .hmc-label {
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .hmc-meta-row .hmc-label {
+    min-width: 5.5rem;
+  }
+
+  .hmc-text {
+    min-width: 0;
+  }
+
+  .hmc-grid {
+    margin-top: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem 0.65rem;
+  }
+
+  .hmc-cell {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .hmc-value {
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .history-match-card > .when {
+    margin-top: 0.65rem;
+  }
+}
+
 @media (max-width: 480px) {
   .page {
     padding-left: 0.7rem;
@@ -902,12 +1008,6 @@ button {
   .league-card,
   .summary-card {
     padding: 0.85rem 0.9rem;
-  }
-
-  .history-table td:nth-child(3) {
-    max-width: 12rem;
-    overflow-wrap: anywhere;
-    word-break: break-word;
   }
 
   .site-footer {
