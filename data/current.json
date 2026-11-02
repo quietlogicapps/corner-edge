@@ -24,19 +24,7 @@
       }
     ]
   },
-  "signals": [
-    {
-      "kickoffUtc": "2026-11-01T16:30:00Z",
-      "league": "Bundesliga",
-      "homeTeam": "Eintracht",
-      "awayTeam": "Hamburger",
-      "line": "9+",
-      "probability": 56.21,
-      "odds": 1.8,
-      "signal": "SIGNAL",
-      "publishedAtUtc": "2026-10-31T17:15:51Z"
-    }
-  ],
+  "signals": [],
   "history": {
     "monthLabel": "October 2026",
     "summary": {
