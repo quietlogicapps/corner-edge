@@ -784,6 +784,8 @@
       const row = byLeague[name] || { win: 0, total: 0 };
       return {
         name,
+        win: row.win,
+        total: row.total,
         hitRate: row.total ? (row.win / row.total) * 100 : 0,
       };
     });
@@ -833,9 +835,12 @@
       .map((league) => {
         const rate = Number(league.hitRate) || 0;
         const width = Math.max(0, Math.min(100, rate));
+        const winCount = Number(league.win) || 0;
+        const totalCount = Number(league.total) || 0;
+        const record = `${formatNumber(winCount, 0)} / ${formatNumber(totalCount, 0)}`;
         return `
           <li class="league-item">
-            <span class="league-name">${escapeHtml(league.name)}</span>
+            <span class="league-name">${escapeHtml(league.name)} <span class="league-record">${escapeHtml(record)}</span></span>
             <div class="league-bar" aria-hidden="true"><span style="width:${width}%"></span></div>
             <span class="league-pct">${formatHitRate(rate)}</span>
           </li>
