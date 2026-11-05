@@ -24,5 +24,17 @@
       }
     ]
   },
-  "signals": []
+  "signals": [
+    {
+      "kickoffUtc": "2026-11-07T12:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Leeds",
+      "awayTeam": "Tottenham",
+      "line": "9+",
+      "probability": 55.61,
+      "odds": 1.83,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-11-05T16:43:32Z"
+    }
+  ]
 }
