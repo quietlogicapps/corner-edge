@@ -57,6 +57,17 @@
       "odds": 1.72,
       "signal": "SIGNAL",
       "publishedAtUtc": "2026-11-06T16:04:13Z"
+    },
+    {
+      "kickoffUtc": "2026-11-08T14:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Sunderland",
+      "awayTeam": "Chelsea",
+      "line": "9+",
+      "probability": 60.7,
+      "odds": 1.8,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-11-06T16:04:23Z"
     }
   ]
 }
