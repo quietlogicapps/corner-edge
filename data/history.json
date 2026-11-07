@@ -170,6 +170,18 @@
       "finalCorners": 12,
       "status": "WIN",
       "publishedAtUtc": "2026-10-31T17:15:51Z"
+    },
+    {
+      "kickoffUtc": "2026-11-07T12:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Leeds",
+      "awayTeam": "Tottenham",
+      "line": "9+",
+      "probability": 55.61,
+      "odds": 1.83,
+      "finalCorners": 10,
+      "status": "WIN",
+      "publishedAtUtc": "2026-11-05T16:43:32Z"
     }
   ]
 }
