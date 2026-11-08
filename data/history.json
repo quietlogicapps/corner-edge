@@ -182,6 +182,18 @@
       "finalCorners": 10,
       "status": "WIN",
       "publishedAtUtc": "2026-11-05T16:43:32Z"
+    },
+    {
+      "kickoffUtc": "2026-11-07T17:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Nottingham Forest",
+      "awayTeam": "Manchester City",
+      "line": "9+",
+      "probability": 60.25,
+      "odds": 1.83,
+      "finalCorners": 10,
+      "status": "WIN",
+      "publishedAtUtc": "2026-11-05T16:43:38Z"
     }
   ]
 }
