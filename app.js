@@ -745,6 +745,15 @@
     return odds !== null && odds !== undefined && odds !== "" && !Number.isNaN(Number(odds));
   }
 
+  // Display-only: whole-number corner lines "N+" render as "N.5+". Raw JSON values stay unchanged.
+  function formatLineDisplay(rawLine) {
+    if (rawLine == null || rawLine === "") return "—";
+    const text = String(rawLine).trim();
+    const match = text.match(/^(\d+)\+$/);
+    if (!match) return text;
+    return `${match[1]}.5+`;
+  }
+
   function escapeHtml(str) {
     return String(str)
       .replace(/&/g, "&amp;")
@@ -824,7 +833,7 @@
         </div>
         <div class="signal-metrics">
           <div>
-            <p class="metric-value">${escapeHtml(s.line || "—")}</p>
+            <p class="metric-value">${escapeHtml(formatLineDisplay(s.line))}</p>
             <p class="metric-label">${t("line")}</p>
           </div>
           <div>
@@ -1174,7 +1183,7 @@
         <td>${escapeHtml(kickoffText)}${publishedHtml}</td>
         <td>${escapeHtml(p.league || "—")}</td>
         <td>${escapeHtml(matchText)}</td>
-        <td>${escapeHtml(p.line || "—")}</td>
+        <td>${escapeHtml(formatLineDisplay(p.line))}</td>
         <td>${formatProbability(p.probability)}</td>
         <td>${oddsText}</td>
         <td>${escapeHtml(finalCorners)}</td>
@@ -1203,7 +1212,7 @@
           <div class="hmc-grid">
             <div class="hmc-cell">
               <span class="hmc-label">${escapeHtml(t("colLine"))}</span>
-              <span class="hmc-value">${escapeHtml(p.line || "—")}</span>
+              <span class="hmc-value">${escapeHtml(formatLineDisplay(p.line))}</span>
             </div>
             <div class="hmc-cell">
               <span class="hmc-label">${escapeHtml(t("colProbability"))}</span>
