@@ -60,6 +60,7 @@
       win: "WIN",
       lost: "LOST",
       backtestByLeague: "Backtest by league",
+      resultsByLeague: "Results by league",
       contact: "Contact",
       gambleResponsibly: "Gamble responsibly",
       disclaimer:
@@ -112,6 +113,7 @@
       win: "УСПЕШНИ",
       lost: "НЕУСПЕШНИ",
       backtestByLeague: "Исторически тест по лиги",
+      resultsByLeague: "Резултати по лиги",
       contact: "Контакт",
       gambleResponsibly: "Залагайте отговорно",
       disclaimer:
@@ -164,6 +166,7 @@
       win: "EXITOSOS",
       lost: "FALLIDOS",
       backtestByLeague: "Prueba histórica por ligas",
+      resultsByLeague: "Resultados por liga",
       contact: "Contacto",
       gambleResponsibly: "Juega de forma responsable",
       disclaimer:
@@ -216,6 +219,7 @@
       win: "BEM-SUCEDIDOS",
       lost: "MALSUCEDIDOS",
       backtestByLeague: "Teste histórico por ligas",
+      resultsByLeague: "Resultados por liga",
       contact: "Contato",
       gambleResponsibly: "Jogue com responsabilidade",
       disclaimer:
@@ -268,6 +272,7 @@
       win: "ERFOLGREICH",
       lost: "ERFOLGLOS",
       backtestByLeague: "Historischer Test nach Ligen",
+      resultsByLeague: "Ergebnisse nach Liga",
       contact: "Kontakt",
       gambleResponsibly: "Verantwortungsbewusst spielen",
       disclaimer:
@@ -320,6 +325,7 @@
       win: "RÉUSSIS",
       lost: "ÉCHOUÉS",
       backtestByLeague: "Test historique par ligues",
+      resultsByLeague: "Résultats par championnat",
       contact: "Contact",
       gambleResponsibly: "Jouez de manière responsable",
       disclaimer:
@@ -372,6 +378,7 @@
       win: "RIUSCITI",
       lost: "NON RIUSCITI",
       backtestByLeague: "Test storico per leghe",
+      resultsByLeague: "Risultati per campionato",
       contact: "Contatto",
       gambleResponsibly: "Gioca in modo responsabile",
       disclaimer:
@@ -424,6 +431,7 @@
       win: "BAŞARILI",
       lost: "BAŞARISIZ",
       backtestByLeague: "Liglere göre tarihsel test",
+      resultsByLeague: "Liglere göre sonuçlar",
       contact: "İletişim",
       gambleResponsibly: "Sorumlu oynayın",
       disclaimer:
@@ -476,6 +484,7 @@
       win: "UDANE",
       lost: "NIEUDANE",
       backtestByLeague: "Test historyczny według lig",
+      resultsByLeague: "Wyniki według ligi",
       contact: "Kontakt",
       gambleResponsibly: "Graj odpowiedzialnie",
       disclaimer:
@@ -528,6 +537,7 @@
       win: "УСПЕШНЫЕ",
       lost: "НЕУСПЕШНЫЕ",
       backtestByLeague: "Исторический тест по лигам",
+      resultsByLeague: "Результаты по лигам",
       contact: "Контакт",
       gambleResponsibly: "Играйте ответственно",
       disclaimer:
