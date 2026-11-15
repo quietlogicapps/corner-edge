@@ -905,10 +905,11 @@ button {
     padding: 0.82rem 1.1rem;
   }
 
-  /* Hit rate / ROI / Profit / Published signals only */
+  /* Hit rate / ROI / Profit / Published signals only — shared desktop height */
   .side-col .stat-card {
     padding: 0.68rem 1.1rem;
-    min-height: 0;
+    height: 7.8rem;
+    min-height: 7.8rem;
   }
 
   .side-col .stat-card + .stat-card {
