@@ -894,6 +894,44 @@ button {
   color: var(--text);
 }
 
+/* Desktop: slightly tighter right-column cards (~8–10% shorter stack) */
+@media (min-width: 921px) {
+  .side-col {
+    gap: 0.72rem;
+  }
+
+  .side-col .stat-card,
+  .side-col .history-card,
+  .side-col .league-card {
+    padding: 0.82rem 1.1rem;
+  }
+
+  .side-col .stat-label {
+    margin-bottom: 0.25rem;
+  }
+
+  .side-col .stat-card > .stat-label + .stat-hint {
+    margin: -0.2rem 0 0.32rem;
+  }
+
+  .side-col .stat-hint {
+    margin-top: 0.1rem;
+  }
+
+  .side-col .history-row {
+    margin-top: 0.22rem;
+  }
+
+  .side-col .league-list {
+    margin-top: 0.4rem;
+    gap: 0.65rem;
+  }
+
+  .side-col .league-item {
+    gap: 0.25rem 0.75rem;
+  }
+}
+
 /* Responsive */
 @media (max-width: 920px) {
   .layout {
