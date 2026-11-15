@@ -541,7 +541,14 @@
   }
 
   function t(key) {
-    return (I18N[state.lang] && I18N[state.lang][key]) || I18N.en[key] || key;
+    const langTable = I18N[state.lang] || I18N.en;
+    if (langTable && Object.prototype.hasOwnProperty.call(langTable, key) && langTable[key]) {
+      return langTable[key];
+    }
+    if (I18N.en && Object.prototype.hasOwnProperty.call(I18N.en, key) && I18N.en[key]) {
+      return I18N.en[key];
+    }
+    return key;
   }
 
   function localizeMonthLabel(label) {
@@ -571,7 +578,10 @@
     document.documentElement.lang = state.lang === "pt-BR" ? "pt-BR" : state.lang;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (key) el.textContent = t(key);
+      if (!key) return;
+      const value = t(key);
+      // Never replace visible copy with a raw missing-key name.
+      if (value && value !== key) el.textContent = value;
     });
     const label = document.getElementById("lang-label");
     if (label) label.textContent = langMeta(state.lang).label;
