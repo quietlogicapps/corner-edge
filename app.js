@@ -49,6 +49,9 @@
       pageSubtitle: "Corners — expected value, line and probability.",
       currentSignals: "Current signals",
       noSignals: "There are no upcoming signals published at the moment.",
+      noSignalsInfoTitle: "No qualifying selections right now",
+      noSignalsInfoText:
+        "Corner Edge analyses supported domestic league fixtures only. Selections are published 24–48 hours before kick-off when the model criteria and market line align. Domestic cups, European club competitions and international matches are not analysed, as squad rotation and line-up uncertainty can distort the data.",
       hitRate: "Hit rate",
       backtest: "Backtest",
       signals: "signals",
@@ -97,6 +100,9 @@
       pageSubtitle: "Корнери — очаквана стойност, линия и вероятност.",
       currentSignals: "Текущи сигнали",
       noSignals: "В момента няма публикувани предстоящи сигнали.",
+      noSignalsInfoTitle: "В момента няма селекции, покриващи критериите",
+      noSignalsInfoText:
+        "Corner Edge анализира само поддържаните мачове от вътрешни първенства. Селекции се публикуват 24–48 часа преди началото, когато критериите на модела и пазарната линия съвпадат. Мачове за купи, европейски клубни турнири и международни срещи не се анализират, тъй като ротациите и несигурността около съставите могат да изкривят данните.",
       hitRate: "Успеваемост",
       backtest: "Исторически тест",
       signals: "сигнала",
@@ -145,6 +151,9 @@
       pageSubtitle: "Córners — valor esperado, línea y probabilidad.",
       currentSignals: "Señales actuales",
       noSignals: "En este momento no hay señales próximas publicadas.",
+      noSignalsInfoTitle: "No hay selecciones que cumplan los criterios en este momento",
+      noSignalsInfoText:
+        "Corner Edge analiza únicamente partidos de liga nacional dentro de las competiciones admitidas. Las selecciones se publican entre 24 y 48 horas antes del inicio cuando los criterios del modelo y la línea de mercado coinciden. No se analizan copas nacionales, competiciones europeas de clubes ni partidos internacionales, ya que las rotaciones y la incertidumbre sobre las alineaciones pueden distorsionar los datos.",
       hitRate: "Tasa de acierto",
       backtest: "Prueba histórica",
       signals: "señales",
@@ -193,6 +202,9 @@
       pageSubtitle: "Escanteios — valor esperado, linha e probabilidade.",
       currentSignals: "Sinais atuais",
       noSignals: "No momento não há sinais próximos publicados.",
+      noSignalsInfoTitle: "No momento, não há seleções que atendam aos critérios",
+      noSignalsInfoText:
+        "Corner Edge analisa apenas partidas de ligas nacionais compatíveis. As seleções são publicadas de 24 a 48 horas antes do início quando os critérios do modelo e a linha de mercado estão alinhados. Copas nacionais, competições europeias de clubes e jogos internacionais não são analisados, pois rodízios e incertezas nas escalações podem distorcer os dados.",
       hitRate: "Taxa de acerto",
       backtest: "Teste histórico",
       signals: "sinais",
@@ -241,6 +253,9 @@
       pageSubtitle: "Ecken — erwarteter Wert, Linie und Wahrscheinlichkeit.",
       currentSignals: "Aktuelle Signale",
       noSignals: "Derzeit sind keine bevorstehenden Signale veröffentlicht.",
+      noSignalsInfoTitle: "Derzeit gibt es keine Auswahl, die die Kriterien erfüllt",
+      noSignalsInfoText:
+        "Corner Edge analysiert ausschließlich unterstützte Spiele nationaler Ligen. Auswahlen werden 24–48 Stunden vor Anpfiff veröffentlicht, wenn Modellkriterien und Marktlinie übereinstimmen. Nationale Pokalwettbewerbe, europäische Klubwettbewerbe und Länderspiele werden nicht analysiert, da Rotation und Unsicherheit bei den Aufstellungen die Daten verzerren können.",
       hitRate: "Trefferquote",
       backtest: "Historischer Test",
       signals: "Signale",
@@ -289,6 +304,9 @@
       pageSubtitle: "Corners — valeur attendue, ligne et probabilité.",
       currentSignals: "Signaux actuels",
       noSignals: "Aucun signal à venir n'est publié pour le moment.",
+      noSignalsInfoTitle: "Aucune sélection ne répond actuellement aux critères",
+      noSignalsInfoText:
+        "Corner Edge analyse uniquement les matchs de championnats nationaux pris en charge. Les sélections sont publiées 24 à 48 heures avant le coup d’envoi lorsque les critères du modèle et la ligne de marché concordent. Les coupes nationales, compétitions européennes de clubs et matchs internationaux ne sont pas analysés, car les rotations et les incertitudes liées aux compositions peuvent fausser les données.",
       hitRate: "Taux de réussite",
       backtest: "Test historique",
       signals: "signaux",
@@ -337,6 +355,9 @@
       pageSubtitle: "Corner — valore atteso, linea e probabilità.",
       currentSignals: "Segnali attuali",
       noSignals: "Al momento non ci sono segnali imminenti pubblicati.",
+      noSignalsInfoTitle: "Al momento non ci sono selezioni che soddisfano i criteri",
+      noSignalsInfoText:
+        "Corner Edge analizza solo le partite dei campionati nazionali supportati. Le selezioni vengono pubblicate 24–48 ore prima del calcio d’inizio quando i criteri del modello e la linea di mercato coincidono. Coppe nazionali, competizioni europee per club e partite internazionali non vengono analizzate, poiché turnover e incertezza sulle formazioni possono alterare i dati.",
       hitRate: "Tasso di successo",
       backtest: "Test storico",
       signals: "segnali",
@@ -385,6 +406,9 @@
       pageSubtitle: "Kornerler — beklenen değer, çizgi ve olasılık.",
       currentSignals: "Güncel sinyaller",
       noSignals: "Şu anda yayınlanmış yaklaşan sinyal yok.",
+      noSignalsInfoTitle: "Şu anda kriterleri karşılayan bir seçim bulunmuyor",
+      noSignalsInfoText:
+        "Corner Edge yalnızca desteklenen yerel lig maçlarını analiz eder. Seçimler, model kriterleri ve piyasa çizgisi uyumlu olduğunda maç başlangıcından 24–48 saat önce yayımlanır. Ulusal kupa maçları, Avrupa kulüp organizasyonları ve uluslararası karşılaşmalar; rotasyonlar ve kadro belirsizliği verileri bozabileceği için analiz edilmez.",
       hitRate: "İsabet oranı",
       backtest: "Tarihsel test",
       signals: "sinyal",
@@ -433,6 +457,9 @@
       pageSubtitle: "Rożne — wartość oczekiwana, linia i prawdopodobieństwo.",
       currentSignals: "Bieżące sygnały",
       noSignals: "W tej chwili nie ma opublikowanych nadchodzących sygnałów.",
+      noSignalsInfoTitle: "Obecnie nie ma typów spełniających kryteria",
+      noSignalsInfoText:
+        "Corner Edge analizuje wyłącznie obsługiwane mecze lig krajowych. Typy są publikowane 24–48 godzin przed rozpoczęciem spotkania, gdy kryteria modelu i linia rynkowa są zgodne. Mecze pucharowe, europejskie rozgrywki klubowe i spotkania międzynarodowe nie są analizowane, ponieważ rotacje i niepewność co do składów mogą zniekształcać dane.",
       hitRate: "Skuteczność",
       backtest: "Test historyczny",
       signals: "sygnałów",
@@ -481,6 +508,9 @@
       pageSubtitle: "Угловые — ожидаемая ценность, линия и вероятность.",
       currentSignals: "Текущие сигналы",
       noSignals: "На данный момент нет опубликованных предстоящих сигналов.",
+      noSignalsInfoTitle: "Сейчас нет сигналов, соответствующих критериям",
+      noSignalsInfoText:
+        "Corner Edge анализирует только матчи поддерживаемых национальных лиг. Сигналы публикуются за 24–48 часов до начала матча, когда критерии модели совпадают с рыночной линией. Национальные кубки, европейские клубные турниры и международные матчи не анализируются, поскольку ротация и неопределённость составов могут исказить данные.",
       hitRate: "Процент успеха",
       backtest: "Исторический тест",
       signals: "сигналов",
@@ -712,6 +742,7 @@
   function renderSignals(signals) {
     const list = document.getElementById("signals-list");
     const empty = document.getElementById("signals-empty");
+    const emptyInfo = document.getElementById("signals-empty-info");
     if (!list) return;
 
     list.innerHTML = "";
@@ -719,9 +750,11 @@
 
     if (!items.length) {
       if (empty) empty.hidden = false;
+      if (emptyInfo) emptyInfo.hidden = false;
       return;
     }
     if (empty) empty.hidden = true;
+    if (emptyInfo) emptyInfo.hidden = true;
 
     items.forEach((s) => {
       const signal = hasOdds(s.odds);
