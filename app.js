@@ -1054,7 +1054,7 @@
         oddsCount += 1;
       }
     });
-    // Month total uses the shared flat-stake profit helper; History ROI reuses that same profit.
+    // Month total uses the shared flat-stake profit helper.
     const profitStats = tallyProfit(rows);
     const total = rows.length;
     return {
@@ -1064,8 +1064,6 @@
       hitRate: total ? (win / total) * 100 : 0,
       averageOdds: oddsCount ? oddsSum / oddsCount : 0,
       monthTotal: profitStats.profit,
-      roi: total ? (profitStats.profit / total) * 100 : 0,
-      hasRoiData: total > 0,
     };
   }
 
@@ -1123,14 +1121,15 @@
       if (el) el.textContent = value;
     };
 
-    set("sum-total", formatNumber(s.totalPredictions || 0, 0));
+    const totalPredictions = Number(s.totalPredictions) || 0;
+    const monthTotal = Number(s.monthTotal) || 0;
+
+    set("sum-total", formatNumber(totalPredictions, 0));
     set("sum-win", formatNumber(s.win || 0, 0));
     set("sum-lost", formatNumber(s.lost || 0, 0));
     set("sum-hit-rate", formatHitRate(s.hitRate));
     set("sum-avg-odds", formatNumber(s.averageOdds || 0, 3));
-    setSignedStat(document.getElementById("sum-roi"), s.roi, s.hasRoiData, formatRoiValue);
 
-    const monthTotal = Number(s.monthTotal) || 0;
     const monthEl = document.getElementById("sum-month-total");
     if (monthEl) {
       const sign = monthTotal > 0 ? "+" : "";
@@ -1138,6 +1137,11 @@
       monthEl.classList.toggle("text-win", monthTotal > 0);
       monthEl.classList.toggle("text-lost", monthTotal < 0);
     }
+
+    // Always update the existing ROI card from the same Month total / Total predictions values.
+    const hasRoiData = totalPredictions > 0;
+    const roi = hasRoiData ? (monthTotal / totalPredictions) * 100 : 0;
+    setSignedStat(document.getElementById("sum-roi"), roi, hasRoiData, formatRoiValue);
   }
 
   function renderHistoryTable(predictions) {
