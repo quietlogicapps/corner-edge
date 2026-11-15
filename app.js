@@ -53,6 +53,9 @@
       noSignalsInfoText:
         "Corner Edge analyses supported domestic league fixtures only. Selections are published 24–48 hours before kick-off when the model criteria and market line align. Domestic cups, European club competitions and international matches are not analysed, as squad rotation and line-up uncertainty can distort the data.",
       hitRate: "Hit rate",
+      roi: "ROI",
+      profit: "Profit",
+      flatStake: "1 unit flat stake",
       backtest: "Backtest",
       publishedSignals: "Published signals",
       signals: "signals",
@@ -106,6 +109,9 @@
       noSignalsInfoText:
         "Corner Edge анализира само поддържаните мачове от вътрешни първенства. Селекции се публикуват 24–48 часа преди началото, когато критериите на модела и пазарната линия съвпадат. Мачове за купи, европейски клубни турнири и международни срещи не се анализират, тъй като ротациите и несигурността около съставите могат да изкривят данните.",
       hitRate: "Успеваемост",
+      roi: "ROI",
+      profit: "Печалба",
+      flatStake: "Фиксиран залог 1 единица",
       backtest: "Исторически тест",
       publishedSignals: "Публикувани сигнали",
       signals: "сигнала",
@@ -159,6 +165,9 @@
       noSignalsInfoText:
         "Corner Edge analiza únicamente partidos de liga nacional dentro de las competiciones admitidas. Las selecciones se publican entre 24 y 48 horas antes del inicio cuando los criterios del modelo y la línea de mercado coinciden. No se analizan copas nacionales, competiciones europeas de clubes ni partidos internacionales, ya que las rotaciones y la incertidumbre sobre las alineaciones pueden distorsionar los datos.",
       hitRate: "Tasa de acierto",
+      roi: "ROI",
+      profit: "Beneficio",
+      flatStake: "Apuesta fija de 1 unidad",
       backtest: "Prueba histórica",
       publishedSignals: "Selecciones publicadas",
       signals: "señales",
@@ -212,6 +221,9 @@
       noSignalsInfoText:
         "Corner Edge analisa apenas partidas de ligas nacionais compatíveis. As seleções são publicadas de 24 a 48 horas antes do início quando os critérios do modelo e a linha de mercado estão alinhados. Copas nacionais, competições europeias de clubes e jogos internacionais não são analisados, pois rodízios e incertezas nas escalações podem distorcer os dados.",
       hitRate: "Taxa de acerto",
+      roi: "ROI",
+      profit: "Lucro",
+      flatStake: "Stake fixa de 1 unidade",
       backtest: "Teste histórico",
       publishedSignals: "Seleções publicadas",
       signals: "sinais",
@@ -265,6 +277,9 @@
       noSignalsInfoText:
         "Corner Edge analysiert ausschließlich unterstützte Spiele nationaler Ligen. Auswahlen werden 24–48 Stunden vor Anpfiff veröffentlicht, wenn Modellkriterien und Marktlinie übereinstimmen. Nationale Pokalwettbewerbe, europäische Klubwettbewerbe und Länderspiele werden nicht analysiert, da Rotation und Unsicherheit bei den Aufstellungen die Daten verzerren können.",
       hitRate: "Trefferquote",
+      roi: "ROI",
+      profit: "Gewinn",
+      flatStake: "Festeinsatz von 1 Einheit",
       backtest: "Historischer Test",
       publishedSignals: "Veröffentlichte Signale",
       signals: "Signale",
@@ -318,6 +333,9 @@
       noSignalsInfoText:
         "Corner Edge analyse uniquement les matchs de championnats nationaux pris en charge. Les sélections sont publiées 24 à 48 heures avant le coup d’envoi lorsque les critères du modèle et la ligne de marché concordent. Les coupes nationales, compétitions européennes de clubs et matchs internationaux ne sont pas analysés, car les rotations et les incertitudes liées aux compositions peuvent fausser les données.",
       hitRate: "Taux de réussite",
+      roi: "ROI",
+      profit: "Profit",
+      flatStake: "Mise fixe de 1 unité",
       backtest: "Test historique",
       publishedSignals: "Sélections publiées",
       signals: "signaux",
@@ -371,6 +389,9 @@
       noSignalsInfoText:
         "Corner Edge analizza solo le partite dei campionati nazionali supportati. Le selezioni vengono pubblicate 24–48 ore prima del calcio d’inizio quando i criteri del modello e la linea di mercato coincidono. Coppe nazionali, competizioni europee per club e partite internazionali non vengono analizzate, poiché turnover e incertezza sulle formazioni possono alterare i dati.",
       hitRate: "Tasso di successo",
+      roi: "ROI",
+      profit: "Profitto",
+      flatStake: "Puntata fissa di 1 unità",
       backtest: "Test storico",
       publishedSignals: "Selezioni pubblicate",
       signals: "segnali",
@@ -424,6 +445,9 @@
       noSignalsInfoText:
         "Corner Edge yalnızca desteklenen yerel lig maçlarını analiz eder. Seçimler, model kriterleri ve piyasa çizgisi uyumlu olduğunda maç başlangıcından 24–48 saat önce yayımlanır. Ulusal kupa maçları, Avrupa kulüp organizasyonları ve uluslararası karşılaşmalar; rotasyonlar ve kadro belirsizliği verileri bozabileceği için analiz edilmez.",
       hitRate: "İsabet oranı",
+      roi: "ROI",
+      profit: "Kâr",
+      flatStake: "Sabit 1 birim bahis",
       backtest: "Tarihsel test",
       publishedSignals: "Yayınlanan seçimler",
       signals: "sinyal",
@@ -477,6 +501,9 @@
       noSignalsInfoText:
         "Corner Edge analizuje wyłącznie obsługiwane mecze lig krajowych. Typy są publikowane 24–48 godzin przed rozpoczęciem spotkania, gdy kryteria modelu i linia rynkowa są zgodne. Mecze pucharowe, europejskie rozgrywki klubowe i spotkania międzynarodowe nie są analizowane, ponieważ rotacje i niepewność co do składów mogą zniekształcać dane.",
       hitRate: "Skuteczność",
+      roi: "ROI",
+      profit: "Zysk",
+      flatStake: "Stała stawka: 1 jednostka",
       backtest: "Test historyczny",
       publishedSignals: "Opublikowane typy",
       signals: "sygnałów",
@@ -530,6 +557,9 @@
       noSignalsInfoText:
         "Corner Edge анализирует только матчи поддерживаемых национальных лиг. Сигналы публикуются за 24–48 часов до начала матча, когда критерии модели совпадают с рыночной линией. Национальные кубки, европейские клубные турниры и международные матчи не анализируются, поскольку ротация и неопределённость составов могут исказить данные.",
       hitRate: "Процент успеха",
+      roi: "ROI",
+      profit: "Прибыль",
+      flatStake: "Фиксированная ставка: 1 единица",
       backtest: "Исторический тест",
       publishedSignals: "Опубликованные сигналы",
       signals: "сигналов",
@@ -848,6 +878,50 @@
     };
   }
 
+  function tallyProfit(predictions) {
+    let profit = 0;
+    let count = 0;
+    (Array.isArray(predictions) ? predictions : []).forEach((p) => {
+      if (!hasOdds(p.odds)) return;
+      const status = String(p.status || "").toUpperCase();
+      const odds = Number(p.odds);
+      if (status === "WIN" || status === "SUCCESSFUL") {
+        profit += odds - 1;
+        count += 1;
+      } else if (status === "LOST" || status === "UNSUCCESSFUL") {
+        profit -= 1;
+        count += 1;
+      }
+    });
+    return {
+      count,
+      profit,
+      roi: count ? (profit / count) * 100 : 0,
+      hasData: count > 0,
+    };
+  }
+
+  function formatRoiValue(value, hasData) {
+    if (!hasData) return "—";
+    const num = Number(value) || 0;
+    const sign = num > 0 ? "+" : "";
+    return `${sign}${formatNumber(num, 1)}%`;
+  }
+
+  function formatProfitValue(value, hasData) {
+    if (!hasData) return "—";
+    const num = Number(value) || 0;
+    const sign = num > 0 ? "+" : "";
+    return `${sign}${formatNumber(num, 2)}u`;
+  }
+
+  function setSignedStat(el, value, hasData, formatter) {
+    if (!el) return;
+    el.textContent = formatter(value, hasData);
+    el.classList.toggle("text-win", hasData && Number(value) > 0);
+    el.classList.toggle("text-lost", hasData && Number(value) < 0);
+  }
+
   function homeStatsFromHistory(historyData) {
     const predictions =
       historyData && Array.isArray(historyData.predictions) ? historyData.predictions : [];
@@ -872,6 +946,8 @@
     const all = tallySettled(predictions);
     const monthPreds = predictions.filter((p) => isKickoffInDeviceMonth(kickoffValue(p)));
     const month = tallySettled(monthPreds);
+    const allProfit = tallyProfit(predictions);
+    const monthProfit = tallyProfit(monthPreds);
 
     const leagues = HOME_LEAGUE_ORDER.map((name) => {
       const row = byLeague[name] || { win: 0, total: 0 };
@@ -892,6 +968,12 @@
       monthBacktest: month.count,
       monthWin: month.win,
       monthLost: month.lost,
+      roi: allProfit.roi,
+      profit: allProfit.profit,
+      hasProfitData: allProfit.hasData,
+      monthRoi: monthProfit.roi,
+      monthProfit: monthProfit.profit,
+      hasMonthProfitData: monthProfit.hasData,
       leagues,
     };
   }
@@ -919,6 +1001,16 @@
     if (backtestMonth) backtestMonth.textContent = formatNumber(s.monthBacktest || 0, 0);
     if (winMonth) winMonth.textContent = formatNumber(s.monthWin || 0, 0);
     if (lostMonth) lostMonth.textContent = formatNumber(s.monthLost || 0, 0);
+
+    setSignedStat(document.getElementById("stat-roi"), s.roi, s.hasProfitData, formatRoiValue);
+    setSignedStat(document.getElementById("stat-roi-month"), s.monthRoi, s.hasMonthProfitData, formatRoiValue);
+    setSignedStat(document.getElementById("stat-profit"), s.profit, s.hasProfitData, formatProfitValue);
+    setSignedStat(
+      document.getElementById("stat-profit-month"),
+      s.monthProfit,
+      s.hasMonthProfitData,
+      formatProfitValue
+    );
 
     const leagueList = document.getElementById("league-list");
     if (!leagueList) return;
