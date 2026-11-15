@@ -1054,7 +1054,7 @@
         oddsCount += 1;
       }
     });
-    // Shared flat-stake profit/ROI helper used by History and Home.
+    // Month total uses the shared flat-stake profit helper; History ROI reuses that same profit.
     const profitStats = tallyProfit(rows);
     const total = rows.length;
     return {
@@ -1064,8 +1064,8 @@
       hitRate: total ? (win / total) * 100 : 0,
       averageOdds: oddsCount ? oddsSum / oddsCount : 0,
       monthTotal: profitStats.profit,
-      roi: profitStats.roi,
-      hasRoiData: profitStats.hasData,
+      roi: total ? (profitStats.profit / total) * 100 : 0,
+      hasRoiData: total > 0,
     };
   }
 
