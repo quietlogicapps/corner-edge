@@ -900,22 +900,35 @@ button {
     gap: 0.72rem;
   }
 
-  .side-col .stat-card,
   .side-col .history-card,
   .side-col .league-card {
     padding: 0.82rem 1.1rem;
   }
 
-  .side-col .stat-label {
-    margin-bottom: 0.25rem;
+  /* Hit rate / ROI / Profit / Published signals only */
+  .side-col .stat-card {
+    padding: 0.68rem 1.1rem;
+    min-height: 0;
+  }
+
+  .side-col .stat-card + .stat-card {
+    margin-top: -0.16rem;
+  }
+
+  .side-col .stat-card .stat-label {
+    margin-bottom: 0.18rem;
   }
 
   .side-col .stat-card > .stat-label + .stat-hint {
-    margin: -0.2rem 0 0.32rem;
+    margin: -0.22rem 0 0.22rem;
   }
 
-  .side-col .stat-hint {
-    margin-top: 0.1rem;
+  .side-col .stat-card .stat-hint {
+    margin-top: 0.06rem;
+  }
+
+  .side-col .stat-label {
+    margin-bottom: 0.25rem;
   }
 
   .side-col .history-row {
