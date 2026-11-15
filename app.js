@@ -1040,23 +1040,22 @@
     let lost = 0;
     let oddsSum = 0;
     let oddsCount = 0;
-    let monthTotal = 0;
     rows.forEach((p) => {
       const status = String(p.status || "").toUpperCase();
       const oddsOk = hasOdds(p.odds);
       const odds = oddsOk ? Number(p.odds) : null;
       if (status === "WIN" || status === "SUCCESSFUL") {
         win += 1;
-        if (oddsOk) monthTotal += odds - 1;
-      } else if (status === "LOST") {
+      } else if (status === "LOST" || status === "UNSUCCESSFUL") {
         lost += 1;
-        if (oddsOk) monthTotal -= 1;
       }
       if (oddsOk) {
         oddsSum += odds;
         oddsCount += 1;
       }
     });
+    // Shared flat-stake profit/ROI helper used by History and Home.
+    const profitStats = tallyProfit(rows);
     const total = rows.length;
     return {
       totalPredictions: total,
@@ -1064,7 +1063,9 @@
       lost,
       hitRate: total ? (win / total) * 100 : 0,
       averageOdds: oddsCount ? oddsSum / oddsCount : 0,
-      monthTotal,
+      monthTotal: profitStats.profit,
+      roi: profitStats.roi,
+      hasRoiData: profitStats.hasData,
     };
   }
 
@@ -1127,6 +1128,7 @@
     set("sum-lost", formatNumber(s.lost || 0, 0));
     set("sum-hit-rate", formatHitRate(s.hitRate));
     set("sum-avg-odds", formatNumber(s.averageOdds || 0, 3));
+    setSignedStat(document.getElementById("sum-roi"), s.roi, s.hasRoiData, formatRoiValue);
 
     const monthTotal = Number(s.monthTotal) || 0;
     const monthEl = document.getElementById("sum-month-total");
