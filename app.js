@@ -136,8 +136,8 @@
       sinceStart: "Общо",
       thisMonth: "Този месец",
       tipstrrTitle: "Публичен запис в Tipstrr",
-      tipstrrText: "Селекциите, публикувани в Tipstrr, са с времеви печат преди началото на мача.",
-      tipstrrCta: "Виж Tipstrr профил ↗",
+      tipstrrText: "Селекциите, публикувани в Tipstrr, имат фиксиран час на публикуване преди началото на мача.",
+      tipstrrCta: "Виж Tipstrr профила ↗",
     },
     es: {
       matchAnalysis: "ANÁLISIS DEL PARTIDO",
@@ -184,7 +184,7 @@
       sinceStart: "Total",
       thisMonth: "Este mes",
       tipstrrTitle: "Registro público en Tipstrr",
-      tipstrrText: "Las selecciones publicadas en Tipstrr quedan registradas con marca de tiempo antes del inicio.",
+      tipstrrText: "Las selecciones publicadas en Tipstrr quedan registradas con fecha y hora antes del inicio del partido.",
       tipstrrCta: "Ver perfil de Tipstrr ↗",
     },
     "pt-BR": {
@@ -375,9 +375,9 @@
       published: "Pubblicato",
       sinceStart: "Totale",
       thisMonth: "Questo mese",
-      tipstrrTitle: "Registro pubblico su Tipstrr",
-      tipstrrText: "Le selezioni pubblicate su Tipstrr sono marchiate temporalmente prima del calcio d'inizio.",
-      tipstrrCta: "Vedi profilo Tipstrr ↗",
+      tipstrrTitle: "Cronologia pubblica su Tipstrr",
+      tipstrrText: "Le selezioni pubblicate su Tipstrr vengono registrate con data e ora prima del calcio d'inizio.",
+      tipstrrCta: "Vedi il profilo Tipstrr ↗",
     },
     tr: {
       matchAnalysis: "MAÇ ANALİZİ",
