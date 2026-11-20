@@ -849,7 +849,6 @@
     const modal = document.getElementById("model-info-modal");
     const dialog = document.getElementById("model-info-dialog");
     const closeX = document.getElementById("model-info-close-x");
-    const closeBtn = document.getElementById("model-info-close-btn");
     if (!btn || !modal || !dialog) return;
 
     const isOpen = () => !modal.hasAttribute("hidden");
@@ -886,13 +885,6 @@
 
     if (closeX) {
       closeX.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        close();
-      });
-    }
-    if (closeBtn) {
-      closeBtn.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
         close();

@@ -326,7 +326,7 @@ body.modal-open {
 }
 
 .modal-body {
-  padding: 0 1rem 0.35rem;
+  padding: 0 1rem 1rem;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
@@ -341,35 +341,7 @@ body.modal-open {
 }
 
 .modal-body p:last-child {
-  margin-bottom: 0.35rem;
-}
-
-.modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.75rem 1rem 1rem;
-  flex-shrink: 0;
-}
-
-.modal-close-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: 0.45rem 0.95rem;
-  border-radius: 8px;
-  border: 1px solid var(--border);
-  background: rgba(27, 70, 93, 0.45);
-  color: var(--text);
-  font-size: 0.88rem;
-  font-weight: 650;
-  cursor: pointer;
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus-visible {
-  border-color: #2d6a88;
-  outline: none;
+  margin-bottom: 0;
 }
 
 /* Layout */
