@@ -804,9 +804,13 @@
 
   function syncModelInfoLabels() {
     const label = infoButtonLabel();
-    const btn = document.getElementById("model-info-btn");
+    const btn = document.getElementById("model-info-button");
     const tip = document.getElementById("model-info-tooltip");
-    if (btn) btn.setAttribute("aria-label", label);
+    if (btn) {
+      btn.setAttribute("aria-label", label);
+      // Keep the visible glyph fixed as lowercase "i".
+      if (btn.textContent !== "i") btn.textContent = "i";
+    }
     if (tip) tip.textContent = label;
 
     const closeX = document.getElementById("model-info-close-x");
@@ -841,7 +845,7 @@
   }
 
   function setupModelInfoModal() {
-    const btn = document.getElementById("model-info-btn");
+    const btn = document.getElementById("model-info-button");
     const modal = document.getElementById("model-info-modal");
     const dialog = document.getElementById("model-info-dialog");
     const closeX = document.getElementById("model-info-close-x");
@@ -870,6 +874,14 @@
       e.preventDefault();
       e.stopPropagation();
       open();
+    });
+
+    btn.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        e.stopPropagation();
+        open();
+      }
     });
 
     if (closeX) {
