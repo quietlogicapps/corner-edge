@@ -796,6 +796,26 @@
     return status || "—";
   }
 
+  function infoButtonLabel() {
+    const raw = t("infoButton");
+    if (!raw || raw === "infoButton") return "How the model works";
+    return String(raw).replace(/^ⓘ\s*/u, "").trim() || String(raw).trim();
+  }
+
+  function syncModelInfoLabels() {
+    const label = infoButtonLabel();
+    const btn = document.getElementById("model-info-btn");
+    const tip = document.getElementById("model-info-tooltip");
+    if (btn) btn.setAttribute("aria-label", label);
+    if (tip) tip.textContent = label;
+
+    const closeX = document.getElementById("model-info-close-x");
+    if (closeX) {
+      const closeLabel = t("infoClose");
+      if (closeLabel && closeLabel !== "infoClose") closeX.setAttribute("aria-label", closeLabel);
+    }
+  }
+
   function applyI18n() {
     document.documentElement.lang = state.lang === "pt-BR" ? "pt-BR" : state.lang;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -817,11 +837,7 @@
       });
     }
 
-    const closeX = document.getElementById("model-info-close-x");
-    if (closeX) {
-      const closeLabel = t("infoClose");
-      if (closeLabel && closeLabel !== "infoClose") closeX.setAttribute("aria-label", closeLabel);
-    }
+    syncModelInfoLabels();
   }
 
   function setupModelInfoModal() {
@@ -832,41 +848,44 @@
     const closeBtn = document.getElementById("model-info-close-btn");
     if (!btn || !modal || !dialog) return;
 
-    const isOpen = () => !modal.hidden;
+    const isOpen = () => !modal.hasAttribute("hidden");
 
     const open = () => {
-      modal.hidden = false;
+      modal.removeAttribute("hidden");
       document.body.classList.add("modal-open");
       btn.setAttribute("aria-expanded", "true");
-      const closeLabel = t("infoClose");
-      if (closeX && closeLabel && closeLabel !== "infoClose") {
-        closeX.setAttribute("aria-label", closeLabel);
-      }
+      syncModelInfoLabels();
       dialog.focus();
     };
 
     const close = () => {
       if (!isOpen()) return;
-      modal.hidden = true;
+      modal.setAttribute("hidden", "");
       document.body.classList.remove("modal-open");
       btn.setAttribute("aria-expanded", "false");
       btn.focus();
     };
 
     btn.addEventListener("click", (e) => {
+      e.preventDefault();
       e.stopPropagation();
-      if (isOpen()) close();
-      else open();
+      open();
     });
 
-    if (closeX) closeX.addEventListener("click", (e) => {
-      e.stopPropagation();
-      close();
-    });
-    if (closeBtn) closeBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      close();
-    });
+    if (closeX) {
+      closeX.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        close();
+      });
+    }
+    if (closeBtn) {
+      closeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        close();
+      });
+    }
 
     modal.addEventListener("click", (e) => {
       if (e.target === modal) close();
