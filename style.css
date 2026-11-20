@@ -167,8 +167,10 @@ button {
 
 .info-tooltip {
   position: absolute;
-  left: 50%;
-  bottom: calc(100% + 8px);
+  right: 0;
+  top: calc(100% + 8px);
+  left: auto;
+  bottom: auto;
   z-index: 25;
   max-width: min(16rem, calc(100vw - 2rem));
   padding: 0.4rem 0.55rem;
@@ -185,7 +187,7 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(-50%) translateY(2px);
+  transform: translateY(-2px);
   transition: opacity 0.12s ease, transform 0.12s ease, visibility 0.12s ease;
 }
 
@@ -194,7 +196,7 @@ button {
   .info-btn:focus-visible + .info-tooltip {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
 }
 
