@@ -26,17 +26,6 @@
   },
   "signals": [
     {
-      "kickoffUtc": "2026-11-20T20:00:00Z",
-      "league": "La Liga",
-      "homeTeam": "Athletic Bilbao",
-      "awayTeam": "Espanyol",
-      "line": "9+",
-      "probability": 56.06,
-      "odds": 1.8,
-      "signal": "SIGNAL",
-      "publishedAtUtc": "2026-11-18T12:28:26Z"
-    },
-    {
       "kickoffUtc": "2026-11-21T15:00:00Z",
       "league": "Premier League",
       "homeTeam": "Aston Villa",
