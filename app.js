@@ -799,7 +799,8 @@
   function infoButtonLabel() {
     const raw = t("infoButton");
     if (!raw || raw === "infoButton") return "How the model works";
-    return String(raw).replace(/^ⓘ\s*/u, "").trim() || String(raw).trim();
+    // Strip leading info-symbol / icon glyphs without requiring the unicode regex flag.
+    return String(raw).replace(/^ⓘ\s*/, "").trim() || String(raw).trim();
   }
 
   function syncModelInfoLabels() {
@@ -849,6 +850,8 @@
     const modal = document.getElementById("model-info-modal");
     const dialog = document.getElementById("model-info-dialog");
     const closeX = document.getElementById("model-info-close-x");
+    // Footer Close button was removed from the markup on purpose.
+    // Never call addEventListener on a missing close button.
     if (!btn || !modal || !dialog) return;
 
     const isOpen = () => !modal.hasAttribute("hidden");
@@ -858,7 +861,15 @@
       document.body.classList.add("modal-open");
       btn.setAttribute("aria-expanded", "true");
       syncModelInfoLabels();
-      dialog.focus();
+      try {
+        dialog.focus({ preventScroll: true });
+      } catch (err) {
+        try {
+          dialog.focus();
+        } catch (focusErr) {
+          /* ignore focus failures */
+        }
+      }
     };
 
     const close = () => {
@@ -866,22 +877,32 @@
       modal.setAttribute("hidden", "");
       document.body.classList.remove("modal-open");
       btn.setAttribute("aria-expanded", "false");
-      btn.focus();
+      try {
+        btn.focus({ preventScroll: true });
+      } catch (err) {
+        try {
+          btn.focus();
+        } catch (focusErr) {
+          /* ignore focus failures */
+        }
+      }
     };
 
-    btn.addEventListener("click", (e) => {
+    const openFromEvent = (e) => {
       e.preventDefault();
       e.stopPropagation();
       open();
-    });
+    };
 
-    btn.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        e.stopPropagation();
-        open();
-      }
-    });
+    // Capture phase so this always runs even if another bubble handler stops later.
+    btn.addEventListener("click", openFromEvent, true);
+    btn.addEventListener(
+      "keydown",
+      (e) => {
+        if (e.key === "Enter" || e.key === " ") openFromEvent(e);
+      },
+      true
+    );
 
     if (closeX) {
       closeX.addEventListener("click", (e) => {
@@ -1578,7 +1599,11 @@
 
   async function init() {
     setupLang();
-    setupModelInfoModal();
+    try {
+      setupModelInfoModal();
+    } catch (err) {
+      console.error("Model info modal setup failed:", err);
+    }
     applyI18n();
 
     const page = detectPage();
