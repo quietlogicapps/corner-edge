@@ -25,14 +25,24 @@
           <span class="brand-tag">Bet Assistant</span>
         </span>
       </a>
-      <div class="lang-wrap">
-        <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
-          <span id="lang-label">EN</span>
-          <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
-            <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-          </svg>
-        </button>
-        <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+      <div class="header-actions">
+        <button
+          type="button"
+          class="info-btn"
+          id="model-info-btn"
+          data-i18n="infoButton"
+          aria-haspopup="dialog"
+          aria-controls="model-info-modal"
+        >ⓘ How the model works</button>
+        <div class="lang-wrap">
+          <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span id="lang-label">EN</span>
+            <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+        </div>
       </div>
     </header>
 
@@ -176,6 +186,33 @@
         <span data-i18n="disclaimer">This website provides statistical analysis, does not guarantee profit and does not accept bets.</span>
       </p>
     </footer>
+  </div>
+
+  <div class="modal-backdrop" id="model-info-modal" hidden>
+    <div
+      class="modal-dialog"
+      id="model-info-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="model-info-title"
+      tabindex="-1"
+    >
+      <div class="modal-header">
+        <h2 class="modal-title" id="model-info-title" data-i18n="modalTitle">How predictions are calculated</h2>
+        <button type="button" class="modal-close-x" id="model-info-close-x" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p data-i18n="infoP1">Each prediction is calculated from our own historical data before bookmaker odds are checked.</p>
+        <p data-i18n="infoP2">The model independently estimates the expected number of corners, the line and the probability. Bookmaker odds are not used to create a prediction.</p>
+        <p data-i18n="infoP3">Odds are added only after the relevant market becomes available. They are shown so visitors can compare the market price with the model’s independent estimate. Only predictions with available odds are published as signals.</p>
+        <p data-i18n="infoP4">The model covers Premier League, La Liga, Serie A and Bundesliga only. It does not analyse domestic cups, club competitions or international matches.</p>
+        <p data-i18n="infoP5">Published completed predictions and their actual results can be checked in the History section.</p>
+        <p data-i18n="infoP6">Statistical analysis only — probabilities are estimates, not guarantees.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modal-close-btn" id="model-info-close-btn" data-i18n="infoClose">Close</button>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>

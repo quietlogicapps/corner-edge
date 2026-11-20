@@ -99,6 +99,18 @@
       tipstrrText: "Selections are published before kickoff and independently recorded.",
       tipstrrCta: "View Tipstrr profile ↗",
       betstampCta: "View Betstamp profile ↗",
+      infoButton: "ⓘ How the model works",
+      modalTitle: "How predictions are calculated",
+      infoP1: "Each prediction is calculated from our own historical data before bookmaker odds are checked.",
+      infoP2:
+        "The model independently estimates the expected number of corners, the line and the probability. Bookmaker odds are not used to create a prediction.",
+      infoP3:
+        "Odds are added only after the relevant market becomes available. They are shown so visitors can compare the market price with the model’s independent estimate. Only predictions with available odds are published as signals.",
+      infoP4:
+        "The model covers Premier League, La Liga, Serie A and Bundesliga only. It does not analyse domestic cups, club competitions or international matches.",
+      infoP5: "Published completed predictions and their actual results can be checked in the History section.",
+      infoP6: "Statistical analysis only — probabilities are estimates, not guarantees.",
+      infoClose: "Close",
     },
     bg: {
       matchAnalysis: "АНАЛИЗ НА МАЧОВЕ",
@@ -156,6 +168,19 @@
       tipstrrText: "Селекциите се публикуват преди началото на мача и се записват независимо.",
       tipstrrCta: "Виж Tipstrr профила ↗",
       betstampCta: "Виж Betstamp профила ↗",
+      infoButton: "ⓘ Как работи моделът",
+      modalTitle: "Как се изчисляват прогнозите",
+      infoP1:
+        "Всяка прогноза се изчислява от собствена историческа база данни, преди да се проверят коефициентите на букмейкъра.",
+      infoP2:
+        "Моделът самостоятелно изчислява очаквания брой корнери, линията и вероятността. Букмейкърският коефициент не участва при създаването на прогнозата.",
+      infoP3:
+        "Коефициентът се добавя едва след като съответният пазар стане наличен. Той е показан, за да се сравни пазарната цена с независимата оценка на модела. Само прогнози с наличен коефициент се публикуват като сигнали.",
+      infoP4:
+        "Моделът работи само за Premier League, La Liga, Serie A и Bundesliga. Не анализира купи, клубни турнири или международни мачове.",
+      infoP5: "Публикуваните завършени прогнози и реалните им резултати могат да бъдат проверени в секция „История“.",
+      infoP6: "Само статистически анализ — вероятностите са оценки, не гаранции.",
+      infoClose: "Затвори",
     },
     es: {
       matchAnalysis: "ANÁLISIS DEL PARTIDO",
@@ -213,6 +238,19 @@
       tipstrrText: "Las selecciones se publican antes del inicio del partido y se registran de forma independiente.",
       tipstrrCta: "Ver perfil de Tipstrr ↗",
       betstampCta: "Ver perfil de Betstamp ↗",
+      infoButton: "ⓘ Cómo funciona el modelo",
+      modalTitle: "Cómo se calculan las predicciones",
+      infoP1:
+        "Cada predicción se calcula con nuestra propia base de datos histórica antes de consultar las cuotas de las casas de apuestas.",
+      infoP2:
+        "El modelo estima de forma independiente el número esperado de córners, la línea y la probabilidad. Las cuotas no se utilizan para crear una predicción.",
+      infoP3:
+        "Las cuotas se añaden solo cuando el mercado correspondiente está disponible. Se muestran para comparar el precio del mercado con la estimación independiente del modelo. Solo se publican como señales las predicciones con cuotas disponibles.",
+      infoP4:
+        "El modelo cubre únicamente la Premier League, La Liga, la Serie A y la Bundesliga. No analiza copas nacionales, competiciones de clubes ni partidos internacionales.",
+      infoP5: "Las predicciones completadas publicadas y sus resultados reales pueden consultarse en la sección Historial.",
+      infoP6: "Solo análisis estadístico: las probabilidades son estimaciones, no garantías.",
+      infoClose: "Cerrar",
     },
     "pt-BR": {
       matchAnalysis: "ANÁLISE DA PARTIDA",
@@ -270,6 +308,19 @@
       tipstrrText: "As seleções são publicadas antes do início da partida e registradas de forma independente.",
       tipstrrCta: "Ver perfil no Tipstrr ↗",
       betstampCta: "Ver perfil no Betstamp ↗",
+      infoButton: "ⓘ Como o modelo funciona",
+      modalTitle: "Como as previsões são calculadas",
+      infoP1:
+        "Cada previsão é calculada com nossa própria base de dados histórica antes da consulta às odds das casas de apostas.",
+      infoP2:
+        "O modelo estima de forma independente o número esperado de escanteios, a linha e a probabilidade. As odds não são usadas para criar uma previsão.",
+      infoP3:
+        "As odds são adicionadas somente quando o mercado correspondente fica disponível. Elas são exibidas para comparar o preço de mercado com a estimativa independente do modelo. Apenas previsões com odds disponíveis são publicadas como sinais.",
+      infoP4:
+        "O modelo cobre apenas Premier League, La Liga, Serie A e Bundesliga. Não analisa copas nacionais, competições de clubes ou jogos internacionais.",
+      infoP5: "As previsões concluídas publicadas e seus resultados reais podem ser consultados na seção Histórico.",
+      infoP6: "Apenas análise estatística — as probabilidades são estimativas, não garantias.",
+      infoClose: "Fechar",
     },
     de: {
       matchAnalysis: "SPIELANALYSE",
@@ -327,6 +378,20 @@
       tipstrrText: "Tipps werden vor Anpfiff veröffentlicht und unabhängig festgehalten.",
       tipstrrCta: "Tipstrr-Profil ansehen ↗",
       betstampCta: "Betstamp-Profil ansehen ↗",
+      infoButton: "ⓘ So funktioniert das Modell",
+      modalTitle: "Wie die Prognosen berechnet werden",
+      infoP1:
+        "Jede Prognose wird anhand unserer eigenen historischen Daten berechnet, bevor Buchmacherquoten geprüft werden.",
+      infoP2:
+        "Das Modell schätzt die erwartete Anzahl an Ecken, die Linie und die Wahrscheinlichkeit unabhängig. Buchmacherquoten werden nicht zur Erstellung einer Prognose verwendet.",
+      infoP3:
+        "Quoten werden erst hinzugefügt, wenn der betreffende Markt verfügbar ist. Sie dienen dem Vergleich des Marktpreises mit der unabhängigen Einschätzung des Modells. Nur Prognosen mit verfügbaren Quoten werden als Signale veröffentlicht.",
+      infoP4:
+        "Das Modell deckt nur Premier League, La Liga, Serie A und Bundesliga ab. Nationale Pokale, Klubwettbewerbe und internationale Spiele werden nicht analysiert.",
+      infoP5:
+        "Veröffentlichte abgeschlossene Prognosen und ihre tatsächlichen Ergebnisse können im Bereich Historie geprüft werden.",
+      infoP6: "Nur statistische Analyse — Wahrscheinlichkeiten sind Schätzungen, keine Garantien.",
+      infoClose: "Schließen",
     },
     fr: {
       matchAnalysis: "ANALYSE DU MATCH",
@@ -384,6 +449,20 @@
       tipstrrText: "Les sélections sont publiées avant le coup d'envoi et enregistrées de façon indépendante.",
       tipstrrCta: "Voir le profil Tipstrr ↗",
       betstampCta: "Voir le profil Betstamp ↗",
+      infoButton: "ⓘ Comment fonctionne le modèle",
+      modalTitle: "Comment les prévisions sont calculées",
+      infoP1:
+        "Chaque prévision est calculée à partir de notre propre base de données historique avant la consultation des cotes des bookmakers.",
+      infoP2:
+        "Le modèle estime indépendamment le nombre attendu de corners, la ligne et la probabilité. Les cotes ne sont pas utilisées pour créer une prévision.",
+      infoP3:
+        "Les cotes sont ajoutées uniquement lorsque le marché concerné devient disponible. Elles servent à comparer le prix du marché avec l’estimation indépendante du modèle. Seules les prévisions avec des cotes disponibles sont publiées comme signaux.",
+      infoP4:
+        "Le modèle couvre uniquement la Premier League, la Liga, la Serie A et la Bundesliga. Il n’analyse pas les coupes nationales, les compétitions de clubs ni les matchs internationaux.",
+      infoP5:
+        "Les prévisions terminées publiées et leurs résultats réels peuvent être consultés dans la section Historique.",
+      infoP6: "Analyse statistique uniquement — les probabilités sont des estimations, pas des garanties.",
+      infoClose: "Fermer",
     },
     it: {
       matchAnalysis: "ANALISI DELLA PARTITA",
@@ -441,6 +520,20 @@
       tipstrrText: "Le selezioni vengono pubblicate prima del calcio d'inizio e registrate in modo indipendente.",
       tipstrrCta: "Vedi il profilo Tipstrr ↗",
       betstampCta: "Vedi il profilo Betstamp ↗",
+      infoButton: "ⓘ Come funziona il modello",
+      modalTitle: "Come vengono calcolate le previsioni",
+      infoP1:
+        "Ogni previsione viene calcolata utilizzando il nostro database storico prima di controllare le quote dei bookmaker.",
+      infoP2:
+        "Il modello stima in modo indipendente il numero atteso di calci d’angolo, la linea e la probabilità. Le quote dei bookmaker non vengono utilizzate per creare una previsione.",
+      infoP3:
+        "Le quote vengono aggiunte solo quando il mercato corrispondente è disponibile. Servono a confrontare il prezzo di mercato con la stima indipendente del modello. Solo le previsioni con quote disponibili vengono pubblicate come segnali.",
+      infoP4:
+        "Il modello copre solo Premier League, La Liga, Serie A e Bundesliga. Non analizza coppe nazionali, competizioni per club o partite internazionali.",
+      infoP5:
+        "Le previsioni pubblicate concluse e i loro risultati reali possono essere consultati nella sezione Cronologia.",
+      infoP6: "Solo analisi statistica — le probabilità sono stime, non garanzie.",
+      infoClose: "Chiudi",
     },
     tr: {
       matchAnalysis: "MAÇ ANALİZİ",
@@ -498,6 +591,19 @@
       tipstrrText: "Seçimler maç başlamadan önce yayınlanır ve bağımsız olarak kayda geçirilir.",
       tipstrrCta: "Tipstrr profilini gör ↗",
       betstampCta: "Betstamp profilini gör ↗",
+      infoButton: "ⓘ Model nasıl çalışır",
+      modalTitle: "Tahminler nasıl hesaplanır",
+      infoP1:
+        "Her tahmin, bahis şirketi oranları kontrol edilmeden önce kendi geçmiş veri tabanımız kullanılarak hesaplanır.",
+      infoP2:
+        "Model, beklenen korner sayısını, çizgiyi ve olasılığı bağımsız olarak tahmin eder. Bahis oranları tahmin oluşturmak için kullanılmaz.",
+      infoP3:
+        "Oranlar yalnızca ilgili piyasa açıldıktan sonra eklenir. Piyasa fiyatını modelin bağımsız tahminiyle karşılaştırmak için gösterilir. Yalnızca oranı mevcut olan tahminler sinyal olarak yayımlanır.",
+      infoP4:
+        "Model yalnızca Premier League, La Liga, Serie A ve Bundesliga'yı kapsar. Yerel kupaları, kulüp turnuvalarını veya uluslararası maçları analiz etmez.",
+      infoP5: "Yayımlanan tamamlanmış tahminler ve gerçek sonuçları Geçmiş bölümünde kontrol edilebilir.",
+      infoP6: "Yalnızca istatistiksel analiz — olasılıklar tahmindir, garanti değildir.",
+      infoClose: "Kapat",
     },
     pl: {
       matchAnalysis: "ANALIZA MECZU",
@@ -555,6 +661,19 @@
       tipstrrText: "Selekcje są publikowane przed rozpoczęciem meczu i zapisywane niezależnie.",
       tipstrrCta: "Zobacz profil Tipstrr ↗",
       betstampCta: "Zobacz profil Betstamp ↗",
+      infoButton: "ⓘ Jak działa model",
+      modalTitle: "Jak obliczane są prognozy",
+      infoP1:
+        "Każda prognoza jest obliczana na podstawie naszej własnej historycznej bazy danych, zanim sprawdzone zostaną kursy bukmacherów.",
+      infoP2:
+        "Model niezależnie szacuje oczekiwaną liczbę rzutów rożnych, linię i prawdopodobieństwo. Kursy bukmacherów nie są używane do tworzenia prognozy.",
+      infoP3:
+        "Kursy są dodawane dopiero po udostępnieniu odpowiedniego rynku. Pokazujemy je, aby porównać cenę rynkową z niezależną oceną modelu. Jako sygnały publikowane są tylko prognozy z dostępnymi kursami.",
+      infoP4:
+        "Model obejmuje tylko Premier League, La Liga, Serie A i Bundesligę. Nie analizuje pucharów krajowych, rozgrywek klubowych ani meczów międzynarodowych.",
+      infoP5: "Opublikowane zakończone prognozy i ich rzeczywiste wyniki można sprawdzić w sekcji Historia.",
+      infoP6: "Wyłącznie analiza statystyczna — prawdopodobieństwa są szacunkami, a nie gwarancjami.",
+      infoClose: "Zamknij",
     },
     ru: {
       matchAnalysis: "АНАЛИЗ МАТЧА",
@@ -612,6 +731,19 @@
       tipstrrText: "Селекции публикуются до начала матча и фиксируются независимо.",
       tipstrrCta: "Смотреть профиль Tipstrr ↗",
       betstampCta: "Смотреть профиль Betstamp ↗",
+      infoButton: "ⓘ Как работает модель",
+      modalTitle: "Как рассчитываются прогнозы",
+      infoP1:
+        "Каждый прогноз рассчитывается на основе нашей собственной исторической базы данных до проверки букмекерских коэффициентов.",
+      infoP2:
+        "Модель независимо оценивает ожидаемое количество угловых, линию и вероятность. Букмекерские коэффициенты не используются для создания прогноза.",
+      infoP3:
+        "Коэффициенты добавляются только после появления соответствующего рынка. Они показаны для сравнения рыночной цены с независимой оценкой модели. В качестве сигналов публикуются только прогнозы с доступными коэффициентами.",
+      infoP4:
+        "Модель охватывает только Premier League, La Liga, Serie A и Bundesliga. Она не анализирует национальные кубки, клубные турниры или международные матчи.",
+      infoP5: "Опубликованные завершённые прогнозы и их фактические результаты можно проверить в разделе «История».",
+      infoP6: "Только статистический анализ — вероятности являются оценками, а не гарантиями.",
+      infoClose: "Закрыть",
     },
   };
 
@@ -684,6 +816,76 @@
         item.classList.toggle("is-active", selected);
       });
     }
+
+    const closeX = document.getElementById("model-info-close-x");
+    if (closeX) {
+      const closeLabel = t("infoClose");
+      if (closeLabel && closeLabel !== "infoClose") closeX.setAttribute("aria-label", closeLabel);
+    }
+  }
+
+  function setupModelInfoModal() {
+    const btn = document.getElementById("model-info-btn");
+    const modal = document.getElementById("model-info-modal");
+    const dialog = document.getElementById("model-info-dialog");
+    const closeX = document.getElementById("model-info-close-x");
+    const closeBtn = document.getElementById("model-info-close-btn");
+    if (!btn || !modal || !dialog) return;
+
+    const isOpen = () => !modal.hidden;
+
+    const open = () => {
+      modal.hidden = false;
+      document.body.classList.add("modal-open");
+      btn.setAttribute("aria-expanded", "true");
+      const closeLabel = t("infoClose");
+      if (closeX && closeLabel && closeLabel !== "infoClose") {
+        closeX.setAttribute("aria-label", closeLabel);
+      }
+      dialog.focus();
+    };
+
+    const close = () => {
+      if (!isOpen()) return;
+      modal.hidden = true;
+      document.body.classList.remove("modal-open");
+      btn.setAttribute("aria-expanded", "false");
+      btn.focus();
+    };
+
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (isOpen()) close();
+      else open();
+    });
+
+    if (closeX) closeX.addEventListener("click", (e) => {
+      e.stopPropagation();
+      close();
+    });
+    if (closeBtn) closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      close();
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) close();
+    });
+
+    dialog.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        e.stopPropagation();
+        close();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && isOpen()) {
+        e.preventDefault();
+        close();
+      }
+    });
   }
 
   function formatNumber(value, decimals = 0) {
@@ -1353,6 +1555,7 @@
 
   async function init() {
     setupLang();
+    setupModelInfoModal();
     applyI18n();
 
     const page = detectPage();
