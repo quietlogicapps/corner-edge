@@ -290,6 +290,18 @@
       "finalCorners": 13,
       "status": "WIN",
       "publishedAtUtc": "2026-11-19T09:30:14Z"
+    },
+    {
+      "kickoffUtc": "2026-11-21T17:00:00Z",
+      "league": "Serie A",
+      "homeTeam": "Parma",
+      "awayTeam": "Roma",
+      "line": "8+",
+      "probability": 58.71,
+      "odds": 1.72,
+      "finalCorners": 11,
+      "status": "WIN",
+      "publishedAtUtc": "2026-11-19T09:30:20Z"
     }
   ]
 }
