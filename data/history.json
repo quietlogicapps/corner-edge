@@ -242,6 +242,18 @@
       "finalCorners": 11,
       "status": "WIN",
       "publishedAtUtc": "2026-11-18T12:28:26Z"
+    },
+    {
+      "kickoffUtc": "2026-11-21T15:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Aston Villa",
+      "awayTeam": "Sunderland",
+      "line": "9+",
+      "probability": 54.56,
+      "odds": 1.83,
+      "finalCorners": 9,
+      "status": "LOST",
+      "publishedAtUtc": "2026-11-19T09:29:57Z"
     }
   ]
 }
