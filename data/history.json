@@ -254,6 +254,18 @@
       "finalCorners": 9,
       "status": "LOST",
       "publishedAtUtc": "2026-11-19T09:29:57Z"
+    },
+    {
+      "kickoffUtc": "2026-11-21T15:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Bournemouth",
+      "awayTeam": "Nottingham Forest",
+      "line": "9+",
+      "probability": 60.16,
+      "odds": 1.72,
+      "finalCorners": 10,
+      "status": "WIN",
+      "publishedAtUtc": "2026-11-19T09:30:03Z"
     }
   ]
 }
