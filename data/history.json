@@ -266,6 +266,18 @@
       "finalCorners": 10,
       "status": "WIN",
       "publishedAtUtc": "2026-11-19T09:30:03Z"
+    },
+    {
+      "kickoffUtc": "2026-11-21T15:00:00Z",
+      "league": "Premier League",
+      "homeTeam": "Chelsea",
+      "awayTeam": "Leeds",
+      "line": "9+",
+      "probability": 57.87,
+      "odds": 1.72,
+      "finalCorners": 5,
+      "status": "LOST",
+      "publishedAtUtc": "2026-11-19T09:30:08Z"
     }
   ]
 }
