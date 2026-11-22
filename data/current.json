@@ -26,17 +26,6 @@
   },
   "signals": [
     {
-      "kickoffUtc": "2026-11-22T13:00:00Z",
-      "league": "La Liga",
-      "homeTeam": "Barcelona",
-      "awayTeam": "Villarreal",
-      "line": "10+",
-      "probability": 56.43,
-      "odds": 1.72,
-      "signal": "SIGNAL",
-      "publishedAtUtc": "2026-11-20T07:04:18Z"
-    },
-    {
       "kickoffUtc": "2026-11-22T16:30:00Z",
       "league": "Premier League",
       "homeTeam": "Liverpool",
