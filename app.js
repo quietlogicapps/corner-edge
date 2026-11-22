@@ -51,7 +51,7 @@
       noSignals: "There are no upcoming signals published at the moment.",
       noSignalsInfoTitle: "No qualifying selections right now",
       noSignalsInfoText:
-        "Corner Edge analyses supported domestic league fixtures only. Selections are published 24–48 hours before kick-off. The model evaluates statistical probability independently of the market and generates a signal only when it exceeds a historically validated threshold. Market-based EV calculations are not used to select or rank signals. Domestic cups, European club competitions and international matches are not analysed, as squad rotation and line-up uncertainty can distort the data.",
+        "Corner Edge analyses fixtures from Premier League, La Liga, Serie A and Bundesliga only. Selections are published 24–48 hours before kick-off. The model evaluates statistical probability independently of the market and generates a signal only when it exceeds a historically validated threshold. Market-based EV calculations are not used to select or rank signals. Domestic cups, European club competitions and international matches are not analysed, as squad rotation and line-up uncertainty can distort the data.",
       hitRate: "Hit rate",
       roi: "ROI",
       profit: "Profit",
@@ -120,7 +120,7 @@
       noSignals: "В момента няма публикувани предстоящи сигнали.",
       noSignalsInfoTitle: "В момента няма селекции, покриващи критериите",
       noSignalsInfoText:
-        "Corner Edge анализира само поддържани мачове от вътрешните първенства. Селекциите се публикуват 24–48 часа преди началото. Моделът оценява статистическата вероятност независимо от пазара и генерира сигнал само когато тя премине исторически валидирания праг. Пазарни EV изчисления не се използват за подбор или подреждане на сигналите. Мачове за национални купи, европейски клубни турнири и международни срещи не се анализират, защото ротациите в съставите и несигурността около титулярите могат да изкривят данните.",
+        "Corner Edge анализира само мачове от Premier League, La Liga, Serie A и Bundesliga. Селекциите се публикуват 24–48 часа преди началото. Моделът оценява статистическата вероятност независимо от пазара и генерира сигнал само когато тя премине исторически валидирания праг. Пазарни EV изчисления не се използват за подбор или подреждане на сигналите. Мачове за национални купи, европейски клубни турнири и международни срещи не се анализират, защото ротациите в съставите и несигурността около титулярите могат да изкривят данните.",
       hitRate: "Успеваемост",
       roi: "ROI",
       profit: "Печалба",
@@ -190,7 +190,7 @@
       noSignals: "En este momento no hay señales próximas publicadas.",
       noSignalsInfoTitle: "No hay selecciones que cumplan los criterios en este momento",
       noSignalsInfoText:
-        "Corner Edge analiza únicamente partidos compatibles de ligas nacionales. Las selecciones se publican entre 24 y 48 horas antes del inicio. El modelo evalúa la probabilidad estadística de forma independiente del mercado y genera una señal solo cuando supera un umbral validado históricamente. Los cálculos de EV basados en el mercado no se utilizan para seleccionar ni clasificar las señales. Las copas nacionales, las competiciones europeas de clubes y los partidos internacionales no se analizan, ya que las rotaciones de plantilla y la incertidumbre sobre las alineaciones pueden distorsionar los datos.",
+        "Corner Edge analiza únicamente partidos de Premier League, La Liga, Serie A y Bundesliga. Las selecciones se publican entre 24 y 48 horas antes del inicio. El modelo evalúa la probabilidad estadística de forma independiente del mercado y genera una señal solo cuando supera un umbral validado históricamente. Los cálculos de EV basados en el mercado no se utilizan para seleccionar ni clasificar las señales. Las copas nacionales, las competiciones europeas de clubes y los partidos internacionales no se analizan, ya que las rotaciones de plantilla y la incertidumbre sobre las alineaciones pueden distorsionar los datos.",
       hitRate: "Tasa de acierto",
       roi: "ROI",
       profit: "Beneficio",
@@ -260,7 +260,7 @@
       noSignals: "No momento não há sinais próximos publicados.",
       noSignalsInfoTitle: "No momento, não há seleções que atendam aos critérios",
       noSignalsInfoText:
-        "O Corner Edge analisa apenas partidas elegíveis de ligas nacionais. As seleções são publicadas de 24 a 48 horas antes do início. O modelo avalia a probabilidade estatística independentemente do mercado e gera um sinal apenas quando ela supera um limite validado historicamente. Cálculos de EV baseados no mercado não são usados para selecionar ou classificar os sinais. Copas nacionais, competições europeias de clubes e partidas internacionais não são analisadas, pois rotações no elenco e a incerteza sobre as escalações podem distorcer os dados.",
+        "O Corner Edge analisa apenas partidas da Premier League, La Liga, Serie A e Bundesliga. As seleções são publicadas de 24 a 48 horas antes do início. O modelo avalia a probabilidade estatística independentemente do mercado e gera um sinal apenas quando ela supera um limite validado historicamente. Cálculos de EV baseados no mercado não são usados para selecionar ou classificar os sinais. Copas nacionais, competições europeias de clubes e partidas internacionais não são analisadas, pois rotações no elenco e a incerteza sobre as escalações podem distorcer os dados.",
       hitRate: "Taxa de acerto",
       roi: "ROI",
       profit: "Lucro",
@@ -330,7 +330,7 @@
       noSignals: "Derzeit sind keine bevorstehenden Signale veröffentlicht.",
       noSignalsInfoTitle: "Derzeit gibt es keine Auswahl, die die Kriterien erfüllt",
       noSignalsInfoText:
-        "Corner Edge analysiert nur unterstützte Spiele nationaler Ligen. Die Auswahlen werden 24–48 Stunden vor Anpfiff veröffentlicht. Das Modell bewertet die statistische Wahrscheinlichkeit unabhängig vom Markt und erzeugt nur dann ein Signal, wenn sie einen historisch validierten Schwellenwert überschreitet. Marktbasierte EV-Berechnungen werden weder zur Auswahl noch zur Einordnung der Signale verwendet. Nationale Pokalwettbewerbe, europäische Klubwettbewerbe und Länderspiele werden nicht analysiert, da Kaderrotationen und Unsicherheit bei den Aufstellungen die Daten verzerren können.",
+        "Corner Edge analysiert nur Spiele aus der Premier League, La Liga, Serie A und Bundesliga. Die Auswahlen werden 24–48 Stunden vor Anpfiff veröffentlicht. Das Modell bewertet die statistische Wahrscheinlichkeit unabhängig vom Markt und erzeugt nur dann ein Signal, wenn sie einen historisch validierten Schwellenwert überschreitet. Marktbasierte EV-Berechnungen werden weder zur Auswahl noch zur Einordnung der Signale verwendet. Nationale Pokalwettbewerbe, europäische Klubwettbewerbe und Länderspiele werden nicht analysiert, da Kaderrotationen und Unsicherheit bei den Aufstellungen die Daten verzerren können.",
       hitRate: "Trefferquote",
       roi: "ROI",
       profit: "Gewinn",
@@ -401,7 +401,7 @@
       noSignals: "Aucun signal à venir n'est publié pour le moment.",
       noSignalsInfoTitle: "Aucune sélection ne répond actuellement aux critères",
       noSignalsInfoText:
-        "Corner Edge analyse uniquement les rencontres prises en charge des championnats nationaux. Les sélections sont publiées 24 à 48 heures avant le coup d’envoi. Le modèle évalue la probabilité statistique indépendamment du marché et ne génère un signal que lorsqu’elle dépasse un seuil historiquement validé. Les calculs d’EV fondés sur le marché ne servent ni à sélectionner ni à classer les signaux. Les coupes nationales, les compétitions européennes de clubs et les matchs internationaux ne sont pas analysés, car les rotations d’effectif et l’incertitude concernant les compositions peuvent fausser les données.",
+        "Corner Edge analyse uniquement des matchs de Premier League, de La Liga, de Serie A et de Bundesliga. Les sélections sont publiées 24 à 48 heures avant le coup d’envoi. Le modèle évalue la probabilité statistique indépendamment du marché et ne génère un signal que lorsqu’elle dépasse un seuil historiquement validé. Les calculs d’EV fondés sur le marché ne servent ni à sélectionner ni à classer les signaux. Les coupes nationales, les compétitions européennes de clubs et les matchs internationaux ne sont pas analysés, car les rotations d’effectif et l’incertitude concernant les compositions peuvent fausser les données.",
       hitRate: "Taux de réussite",
       roi: "ROI",
       profit: "Profit",
@@ -472,7 +472,7 @@
       noSignals: "Al momento non ci sono segnali imminenti pubblicati.",
       noSignalsInfoTitle: "Al momento non ci sono selezioni che soddisfano i criteri",
       noSignalsInfoText:
-        "Corner Edge analizza solo le partite supportate dei campionati nazionali. Le selezioni vengono pubblicate 24–48 ore prima del calcio d’inizio. Il modello valuta la probabilità statistica indipendentemente dal mercato e genera un segnale solo quando supera una soglia validata storicamente. I calcoli di EV basati sul mercato non vengono utilizzati per selezionare o ordinare i segnali. Le coppe nazionali, le competizioni europee per club e le partite internazionali non vengono analizzate, poiché le rotazioni della rosa e l’incertezza sulle formazioni possono distorcere i dati.",
+        "Corner Edge analizza solo partite di Premier League, La Liga, Serie A e Bundesliga. Le selezioni vengono pubblicate 24–48 ore prima del calcio d’inizio. Il modello valuta la probabilità statistica indipendentemente dal mercato e genera un segnale solo quando supera una soglia validata storicamente. I calcoli di EV basati sul mercato non vengono utilizzati per selezionare o ordinare i segnali. Le coppe nazionali, le competizioni europee per club e le partite internazionali non vengono analizzate, poiché le rotazioni della rosa e l’incertezza sulle formazioni possono distorcere i dati.",
       hitRate: "Tasso di successo",
       roi: "ROI",
       profit: "Profitto",
@@ -543,7 +543,7 @@
       noSignals: "Şu anda yayınlanmış yaklaşan sinyal yok.",
       noSignalsInfoTitle: "Şu anda kriterleri karşılayan bir seçim bulunmuyor",
       noSignalsInfoText:
-        "Corner Edge yalnızca desteklenen yerel lig maçlarını analiz eder. Seçimler başlangıçtan 24–48 saat önce yayınlanır. Model, istatistiksel olasılığı piyasadan bağımsız olarak değerlendirir ve yalnızca tarihsel olarak doğrulanmış bir eşiği aştığında sinyal üretir. Piyasa temelli EV hesaplamaları sinyalleri seçmek veya sıralamak için kullanılmaz. Ulusal kupalar, Avrupa kulüp organizasyonları ve uluslararası maçlar; kadro rotasyonları ve ilk 11 belirsizliği verileri bozabileceği için analiz edilmez.",
+        "Corner Edge yalnızca Premier League, La Liga, Serie A ve Bundesliga maçlarını analiz eder. Seçimler başlangıçtan 24–48 saat önce yayınlanır. Model, istatistiksel olasılığı piyasadan bağımsız olarak değerlendirir ve yalnızca tarihsel olarak doğrulanmış bir eşiği aştığında sinyal üretir. Piyasa temelli EV hesaplamaları sinyalleri seçmek veya sıralamak için kullanılmaz. Ulusal kupalar, Avrupa kulüp organizasyonları ve uluslararası maçlar; kadro rotasyonları ve ilk 11 belirsizliği verileri bozabileceği için analiz edilmez.",
       hitRate: "İsabet oranı",
       roi: "ROI",
       profit: "Kâr",
@@ -613,7 +613,7 @@
       noSignals: "W tej chwili nie ma opublikowanych nadchodzących sygnałów.",
       noSignalsInfoTitle: "Obecnie nie ma typów spełniających kryteria",
       noSignalsInfoText:
-        "Corner Edge analizuje wyłącznie obsługiwane mecze krajowych lig. Selekcje są publikowane 24–48 godzin przed rozpoczęciem spotkania. Model ocenia prawdopodobieństwo statystyczne niezależnie od rynku i generuje sygnał tylko wtedy, gdy przekracza ono historycznie zweryfikowany próg. Oparte na rynku obliczenia EV nie są używane do wyboru ani klasyfikowania sygnałów. Krajowe puchary, europejskie rozgrywki klubowe i mecze międzynarodowe nie są analizowane, ponieważ rotacje w składzie i niepewność co do wyjściowych jedenastek mogą zniekształcić dane.",
+        "Corner Edge analizuje wyłącznie mecze Premier League, La Liga, Serie A i Bundesligi. Selekcje są publikowane 24–48 godzin przed rozpoczęciem spotkania. Model ocenia prawdopodobieństwo statystyczne niezależnie od rynku i generuje sygnał tylko wtedy, gdy przekracza ono historycznie zweryfikowany próg. Oparte na rynku obliczenia EV nie są używane do wyboru ani klasyfikowania sygnałów. Krajowe puchary, europejskie rozgrywki klubowe i mecze międzynarodowe nie są analizowane, ponieważ rotacje w składzie i niepewność co do wyjściowych jedenastek mogą zniekształcić dane.",
       hitRate: "Skuteczność",
       roi: "ROI",
       profit: "Zysk",
@@ -683,7 +683,7 @@
       noSignals: "На данный момент нет опубликованных предстоящих сигналов.",
       noSignalsInfoTitle: "Сейчас нет сигналов, соответствующих критериям",
       noSignalsInfoText:
-        "Corner Edge анализирует только поддерживаемые матчи национальных лиг. Сигналы публикуются за 24–48 часов до начала матча. Модель оценивает статистическую вероятность независимо от рынка и генерирует сигнал только тогда, когда она превышает исторически подтверждённый порог. Рыночные расчёты EV не используются для отбора или ранжирования сигналов. Национальные кубки, европейские клубные турниры и международные матчи не анализируются, поскольку ротация состава и неопределённость стартовых составов могут исказить данные.",
+        "Corner Edge анализирует только матчи Премьер-лиги, Ла Лиги, Серии A и Бундеслиги. Сигналы публикуются за 24–48 часов до начала матча. Модель оценивает статистическую вероятность независимо от рынка и генерирует сигнал только тогда, когда она превышает исторически подтверждённый порог. Рыночные расчёты EV не используются для отбора или ранжирования сигналов. Национальные кубки, европейские клубные турниры и международные матчи не анализируются, поскольку ротация состава и неопределённость стартовых составов могут исказить данные.",
       hitRate: "Процент успеха",
       roi: "ROI",
       profit: "Прибыль",
