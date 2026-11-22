@@ -314,6 +314,18 @@
       "finalCorners": 10,
       "status": "LOST",
       "publishedAtUtc": "2026-11-20T07:04:18Z"
+    },
+    {
+      "kickoffUtc": "2026-11-22T16:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Liverpool",
+      "awayTeam": "Manchester United",
+      "line": "9+",
+      "probability": 58.56,
+      "odds": 1.72,
+      "finalCorners": 20,
+      "status": "WIN",
+      "publishedAtUtc": "2026-11-20T07:04:26Z"
     }
   ]
 }
