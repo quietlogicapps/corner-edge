@@ -35,6 +35,17 @@
       "odds": 1.83,
       "signal": "SIGNAL",
       "publishedAtUtc": "2026-11-23T22:23:55Z"
+    },
+    {
+      "kickoffUtc": "2026-11-28T17:00:00Z",
+      "league": "Serie A",
+      "homeTeam": "Torino",
+      "awayTeam": "Lazio",
+      "line": "8+",
+      "probability": 60.73,
+      "odds": 1.83,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-11-23T22:24:01Z"
     }
   ]
 }
