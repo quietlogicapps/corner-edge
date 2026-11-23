@@ -24,5 +24,17 @@
       }
     ]
   },
-  "signals": []
+  "signals": [
+    {
+      "kickoffUtc": "2026-11-28T14:30:00Z",
+      "league": "Bundesliga",
+      "homeTeam": "Mainz",
+      "awayTeam": "Union Berlin",
+      "line": "9+",
+      "probability": 53.51,
+      "odds": 1.83,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-11-23T22:23:55Z"
+    }
+  ]
 }
