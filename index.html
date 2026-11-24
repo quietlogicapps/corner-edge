@@ -18,13 +18,20 @@
 <body>
   <div class="page">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Corner Edge home">
-        <span class="brand-logo" aria-hidden="true">CE</span>
-        <span class="brand-text">
-          <span class="brand-name">Corner Edge</span>
-          <span class="brand-tag">Bet Assistant</span>
-        </span>
-      </a>
+      <div class="header-left">
+        <a class="brand" href="index.html" aria-label="Corner Edge home" id="brand-link">
+          <span class="brand-logo" aria-hidden="true">CE</span>
+          <span class="brand-text">
+            <span class="brand-name">Corner Edge</span>
+            <span class="brand-tag">Bet Assistant</span>
+          </span>
+        </a>
+        <nav class="model-tabs" id="model-tabs" aria-label="Models">
+          <a class="model-tab is-active" data-model="corners" href="index.html?model=corners">Corners</a>
+          <a class="model-tab" data-model="cards" href="index.html?model=cards">Cards</a>
+          <a class="model-tab" data-model="uo" href="index.html?model=uo">Over/Under</a>
+        </nav>
+      </div>
       <div class="header-actions">
         <div class="info-btn-wrap">
           <button

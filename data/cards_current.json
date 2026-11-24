@@ -1,0 +1,16 @@
+{
+  "month": "",
+  "stats": {
+    "hitRate": 0,
+    "backtest": 0,
+    "win": 0,
+    "lost": 0,
+    "leagues": [
+      { "name": "Premier League", "hitRate": 0 },
+      { "name": "La Liga", "hitRate": 0 },
+      { "name": "Serie A", "hitRate": 0 },
+      { "name": "Bundesliga", "hitRate": 0 }
+    ]
+  },
+  "signals": []
+}

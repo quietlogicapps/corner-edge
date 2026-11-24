@@ -111,6 +111,22 @@
       infoP5: "Published completed predictions and their actual results can be checked in the History section.",
       infoP6: "Statistical analysis only — probabilities are estimates, not guarantees.",
       infoClose: "Close",
+      modelCorners: "Corners",
+      modelCards: "Cards",
+      modelUo: "Over/Under",
+      modelTabsAria: "Models",
+      pageSubtitleCards: "Cards — expected value, line and probability.",
+      pageSubtitleUo: "Over/Under — expected value, line and probability.",
+      historyTitleCards: "History — Cards",
+      historyTitleUo: "History — Over/Under",
+      cardsSuffix: "CARDS",
+      uoSuffix: "OVER/UNDER",
+      colFinalCards: "Final cards",
+      colFinalUo: "Final total",
+      noSignalsInfoTextCards:
+        "Corner Edge analyses fixtures from Premier League, La Liga, Serie A and Bundesliga only. Selections are published 24–48 hours before kick-off. The cards model evaluates statistical probability independently of the market and generates a signal only when it exceeds a historically validated threshold. Market-based EV calculations are not used to select or rank signals. Domestic cups, European club competitions and international matches are not analysed, as squad rotation and line-up uncertainty can distort the data.",
+      noSignalsInfoTextUo:
+        "Corner Edge analyses fixtures from Premier League, La Liga, Serie A and Bundesliga only. Selections are published 24–48 hours before kick-off. The over/under model evaluates statistical probability independently of the market and generates a signal only when it exceeds a historically validated threshold. Market-based EV calculations are not used to select or rank signals. Domestic cups, European club competitions and international matches are not analysed, as squad rotation and line-up uncertainty can distort the data.",
     },
     bg: {
       matchAnalysis: "АНАЛИЗ НА МАЧОВЕ",
@@ -181,6 +197,22 @@
       infoP5: "Публикуваните завършени прогнози и реалните им резултати могат да бъдат проверени в секция „История“.",
       infoP6: "Само статистически анализ — вероятностите са оценки, не гаранции.",
       infoClose: "Затвори",
+      modelCorners: "Корнери",
+      modelCards: "Картони",
+      modelUo: "Над/Под",
+      modelTabsAria: "Модели",
+      pageSubtitleCards: "Картони — очаквана стойност, линия и вероятност.",
+      pageSubtitleUo: "Над/Под — очаквана стойност, линия и вероятност.",
+      historyTitleCards: "История — Картони",
+      historyTitleUo: "История — Над/Под",
+      cardsSuffix: "КАРТОНИ",
+      uoSuffix: "НАД/ПОД",
+      colFinalCards: "Крайни картони",
+      colFinalUo: "Краен тотал",
+      noSignalsInfoTextCards:
+        "Corner Edge анализира мачове само от Premier League, La Liga, Serie A и Bundesliga. Селекциите се публикуват 24–48 часа преди началото. Моделът за картони оценява статистическата вероятност независимо от пазара и генерира сигнал само когато тя надхвърли исторически валидиран праг. Пазарни EV изчисления не се използват за избор или подреждане на сигнали. Национални купи, европейски клубни турнири и международни мачове не се анализират, тъй като ротациите и несигурността в съставите могат да изкривят данните.",
+      noSignalsInfoTextUo:
+        "Corner Edge анализира мачове само от Premier League, La Liga, Serie A и Bundesliga. Селекциите се публикуват 24–48 часа преди началото. Моделът Над/Под оценява статистическата вероятност независимо от пазара и генерира сигнал само когато тя надхвърли исторически валидиран праг. Пазарни EV изчисления не се използват за избор или подреждане на сигнали. Национални купи, европейски клубни турнири и международни мачове не се анализират, тъй като ротациите и несигурността в съставите могат да изкривят данните.",
     },
     es: {
       matchAnalysis: "ANÁLISIS DEL PARTIDO",
@@ -251,6 +283,22 @@
       infoP5: "Las predicciones completadas publicadas y sus resultados reales pueden consultarse en la sección Historial.",
       infoP6: "Solo análisis estadístico: las probabilidades son estimaciones, no garantías.",
       infoClose: "Cerrar",
+      modelCorners: "Córners",
+      modelCards: "Tarjetas",
+      modelUo: "Más/Menos",
+      modelTabsAria: "Modelos",
+      pageSubtitleCards: "Tarjetas — valor esperado, línea y probabilidad.",
+      pageSubtitleUo: "Más/Menos — valor esperado, línea y probabilidad.",
+      historyTitleCards: "Historial — Tarjetas",
+      historyTitleUo: "Historial — Más/Menos",
+      cardsSuffix: "TARJETAS",
+      uoSuffix: "MÁS/MENOS",
+      colFinalCards: "Tarjetas finales",
+      colFinalUo: "Total final",
+      noSignalsInfoTextCards:
+        "Corner Edge analiza partidos solo de Premier League, La Liga, Serie A y Bundesliga. Las selecciones se publican 24–48 horas antes del inicio. El modelo de tarjetas evalúa la probabilidad estadística de forma independiente del mercado y genera una señal solo cuando supera un umbral validado históricamente. No se usan cálculos de EV basados en el mercado para seleccionar o ordenar señales. No se analizan copas nacionales, competiciones europeas de clubes ni partidos internacionales, ya que las rotaciones y la incertidumbre en las alineaciones pueden distorsionar los datos.",
+      noSignalsInfoTextUo:
+        "Corner Edge analiza partidos solo de Premier League, La Liga, Serie A y Bundesliga. Las selecciones se publican 24–48 horas antes del inicio. El modelo Más/Menos evalúa la probabilidad estadística de forma independiente del mercado y genera una señal solo cuando supera un umbral validado históricamente. No se usan cálculos de EV basados en el mercado para seleccionar o ordenar señales. No se analizan copas nacionales, competiciones europeas de clubes ni partidos internacionales, ya que las rotaciones y la incertidumbre en las alineaciones pueden distorsionar los datos.",
     },
     "pt-BR": {
       matchAnalysis: "ANÁLISE DA PARTIDA",
@@ -321,6 +369,22 @@
       infoP5: "As previsões concluídas publicadas e seus resultados reais podem ser consultados na seção Histórico.",
       infoP6: "Apenas análise estatística — as probabilidades são estimativas, não garantias.",
       infoClose: "Fechar",
+      modelCorners: "Escanteios",
+      modelCards: "Cartões",
+      modelUo: "Mais/Menos",
+      modelTabsAria: "Modelos",
+      pageSubtitleCards: "Cartões — valor esperado, linha e probabilidade.",
+      pageSubtitleUo: "Mais/Menos — valor esperado, linha e probabilidade.",
+      historyTitleCards: "Histórico — Cartões",
+      historyTitleUo: "Histórico — Mais/Menos",
+      cardsSuffix: "CARTÕES",
+      uoSuffix: "MAIS/MENOS",
+      colFinalCards: "Cartões finais",
+      colFinalUo: "Total final",
+      noSignalsInfoTextCards:
+        "Corner Edge analisa partidas apenas da Premier League, La Liga, Serie A e Bundesliga. As seleções são publicadas 24–48 horas antes do início. O modelo de cartões avalia a probabilidade estatística independentemente do mercado e gera um sinal somente quando ela ultrapassa um limiar historicamente validado. Cálculos de EV baseados no mercado não são usados para selecionar ou ranquear sinais. Copas domésticas, competições europeias de clubes e jogos internacionais não são analisados, pois rodízios e incerteza nas escalações podem distorcer os dados.",
+      noSignalsInfoTextUo:
+        "Corner Edge analisa partidas apenas da Premier League, La Liga, Serie A e Bundesliga. As seleções são publicadas 24–48 horas antes do início. O modelo Mais/Menos avalia a probabilidade estatística independentemente do mercado e gera um sinal somente quando ela ultrapassa um limiar historicamente validado. Cálculos de EV baseados no mercado não são usados para selecionar ou ranquear sinais. Copas domésticas, competições europeias de clubes e jogos internacionais não são analisados, pois rodízios e incerteza nas escalações podem distorcer os dados.",
     },
     de: {
       matchAnalysis: "SPIELANALYSE",
@@ -392,6 +456,22 @@
         "Veröffentlichte abgeschlossene Prognosen und ihre tatsächlichen Ergebnisse können im Bereich Historie geprüft werden.",
       infoP6: "Nur statistische Analyse — Wahrscheinlichkeiten sind Schätzungen, keine Garantien.",
       infoClose: "Schließen",
+      modelCorners: "Ecken",
+      modelCards: "Karten",
+      modelUo: "Über/Unter",
+      modelTabsAria: "Modelle",
+      pageSubtitleCards: "Karten — erwarteter Wert, Linie und Wahrscheinlichkeit.",
+      pageSubtitleUo: "Über/Unter — erwarteter Wert, Linie und Wahrscheinlichkeit.",
+      historyTitleCards: "Verlauf — Karten",
+      historyTitleUo: "Verlauf — Über/Unter",
+      cardsSuffix: "KARTEN",
+      uoSuffix: "ÜBER/UNTER",
+      colFinalCards: "Endgültige Karten",
+      colFinalUo: "Endgültiger Total",
+      noSignalsInfoTextCards:
+        "Corner Edge analysiert nur Spiele aus Premier League, La Liga, Serie A und Bundesliga. Auswahlen werden 24–48 Stunden vor Anpfiff veröffentlicht. Das Kartenmodell bewertet die statistische Wahrscheinlichkeit unabhängig vom Markt und erzeugt ein Signal nur, wenn sie eine historisch validierte Schwelle überschreitet. Marktbasierte EV-Berechnungen werden nicht zur Auswahl oder Rangfolge von Signalen verwendet. Nationale Pokale, europäische Klubwettbewerbe und Länderspiele werden nicht analysiert, da Rotation und Aufstellungsunsicherheit die Daten verzerren können.",
+      noSignalsInfoTextUo:
+        "Corner Edge analysiert nur Spiele aus Premier League, La Liga, Serie A und Bundesliga. Auswahlen werden 24–48 Stunden vor Anpfiff veröffentlicht. Das Über/Unter-Modell bewertet die statistische Wahrscheinlichkeit unabhängig vom Markt und erzeugt ein Signal nur, wenn sie eine historisch validierte Schwelle überschreitet. Marktbasierte EV-Berechnungen werden nicht zur Auswahl oder Rangfolge von Signalen verwendet. Nationale Pokale, europäische Klubwettbewerbe und Länderspiele werden nicht analysiert, da Rotation und Aufstellungsunsicherheit die Daten verzerren können.",
     },
     fr: {
       matchAnalysis: "ANALYSE DU MATCH",
@@ -463,6 +543,22 @@
         "Les prévisions terminées publiées et leurs résultats réels peuvent être consultés dans la section Historique.",
       infoP6: "Analyse statistique uniquement — les probabilités sont des estimations, pas des garanties.",
       infoClose: "Fermer",
+      modelCorners: "Corners",
+      modelCards: "Cartons",
+      modelUo: "Plus/Moins",
+      modelTabsAria: "Modèles",
+      pageSubtitleCards: "Cartons — valeur attendue, ligne et probabilité.",
+      pageSubtitleUo: "Plus/Moins — valeur attendue, ligne et probabilité.",
+      historyTitleCards: "Historique — Cartons",
+      historyTitleUo: "Historique — Plus/Moins",
+      cardsSuffix: "CARTONS",
+      uoSuffix: "PLUS/MOINS",
+      colFinalCards: "Cartons finaux",
+      colFinalUo: "Total final",
+      noSignalsInfoTextCards:
+        "Corner Edge analyse uniquement les matchs de Premier League, La Liga, Serie A et Bundesliga. Les sélections sont publiées 24–48 heures avant le coup d’envoi. Le modèle cartons évalue la probabilité statistique indépendamment du marché et génère un signal uniquement lorsqu’elle dépasse un seuil historiquement validé. Les calculs d’EV basés sur le marché ne sont pas utilisés pour sélectionner ou classer les signaux. Les coupes nationales, les compétitions européennes de clubs et les matchs internationaux ne sont pas analysés, car les rotations et l’incertitude des compositions peuvent fausser les données.",
+      noSignalsInfoTextUo:
+        "Corner Edge analyse uniquement les matchs de Premier League, La Liga, Serie A et Bundesliga. Les sélections sont publiées 24–48 heures avant le coup d’envoi. Le modèle Plus/Moins évalue la probabilité statistique indépendamment du marché et génère un signal uniquement lorsqu’elle dépasse un seuil historiquement validé. Les calculs d’EV basés sur le marché ne sont pas utilisés pour sélectionner ou classer les signaux. Les coupes nationales, les compétitions européennes de clubs et les matchs internationaux ne sont pas analysés, car les rotations et l’incertitude des compositions peuvent fausser les données.",
     },
     it: {
       matchAnalysis: "ANALISI DELLA PARTITA",
@@ -534,6 +630,22 @@
         "Le previsioni pubblicate concluse e i loro risultati reali possono essere consultati nella sezione Cronologia.",
       infoP6: "Solo analisi statistica — le probabilità sono stime, non garanzie.",
       infoClose: "Chiudi",
+      modelCorners: "Corner",
+      modelCards: "Cartellini",
+      modelUo: "Over/Under",
+      modelTabsAria: "Modelli",
+      pageSubtitleCards: "Cartellini — valore atteso, linea e probabilità.",
+      pageSubtitleUo: "Over/Under — valore atteso, linea e probabilità.",
+      historyTitleCards: "Cronologia — Cartellini",
+      historyTitleUo: "Cronologia — Over/Under",
+      cardsSuffix: "CARTELLINI",
+      uoSuffix: "OVER/UNDER",
+      colFinalCards: "Cartellini finali",
+      colFinalUo: "Totale finale",
+      noSignalsInfoTextCards:
+        "Corner Edge analizza solo le partite di Premier League, La Liga, Serie A e Bundesliga. Le selezioni vengono pubblicate 24–48 ore prima del calcio d’inizio. Il modello cartellini valuta la probabilità statistica indipendentemente dal mercato e genera un segnale solo quando supera una soglia storicamente validata. I calcoli di EV basati sul mercato non vengono usati per selezionare o ordinare i segnali. Coppe nazionali, competizioni europee per club e partite internazionali non vengono analizzate, perché rotazioni e incertezza nelle formazioni possono distorcere i dati.",
+      noSignalsInfoTextUo:
+        "Corner Edge analizza solo le partite di Premier League, La Liga, Serie A e Bundesliga. Le selezioni vengono pubblicate 24–48 ore prima del calcio d’inizio. Il modello Over/Under valuta la probabilità statistica indipendentemente dal mercato e genera un segnale solo quando supera una soglia storicamente validata. I calcoli di EV basati sul mercato non vengono usati per selezionare o ordinare i segnali. Coppe nazionali, competizioni europee per club e partite internazionali non vengono analizzate, perché rotazioni e incertezza nelle formazioni possono distorcere i dati.",
     },
     tr: {
       matchAnalysis: "MAÇ ANALİZİ",
@@ -604,6 +716,22 @@
       infoP5: "Yayımlanan tamamlanmış tahminler ve gerçek sonuçları Geçmiş bölümünde kontrol edilebilir.",
       infoP6: "Yalnızca istatistiksel analiz — olasılıklar tahmindir, garanti değildir.",
       infoClose: "Kapat",
+      modelCorners: "Kornerler",
+      modelCards: "Kartlar",
+      modelUo: "Üst/Alt",
+      modelTabsAria: "Modeller",
+      pageSubtitleCards: "Kartlar — beklenen değer, çizgi ve olasılık.",
+      pageSubtitleUo: "Üst/Alt — beklenen değer, çizgi ve olasılık.",
+      historyTitleCards: "Geçmiş — Kartlar",
+      historyTitleUo: "Geçmiş — Üst/Alt",
+      cardsSuffix: "KARTLAR",
+      uoSuffix: "ÜST/ALT",
+      colFinalCards: "Final kart",
+      colFinalUo: "Final toplam",
+      noSignalsInfoTextCards:
+        "Corner Edge yalnızca Premier League, La Liga, Serie A ve Bundesliga maçlarını analiz eder. Seçimler kick-off’tan 24–48 saat önce yayınlanır. Kart modeli istatistiksel olasılığı piyasadan bağımsız değerlendirir ve yalnızca tarihsel olarak doğrulanmış bir eşiği aştığında sinyal üretir. Piyasa tabanlı EV hesaplamaları sinyalleri seçmek veya sıralamak için kullanılmaz. Ulusal kupalar, Avrupa kulüp müsabakaları ve uluslararası maçlar analiz edilmez; çünkü rotasyon ve kadro belirsizliği verileri bozabilir.",
+      noSignalsInfoTextUo:
+        "Corner Edge yalnızca Premier League, La Liga, Serie A ve Bundesliga maçlarını analiz eder. Seçimler kick-off’tan 24–48 saat önce yayınlanır. Üst/Alt modeli istatistiksel olasılığı piyasadan bağımsız değerlendirir ve yalnızca tarihsel olarak doğrulanmış bir eşiği aştığında sinyal üretir. Piyasa tabanlı EV hesaplamaları sinyalleri seçmek veya sıralamak için kullanılmaz. Ulusal kupalar, Avrupa kulüp müsabakaları ve uluslararası maçlar analiz edilmez; çünkü rotasyon ve kadro belirsizliği verileri bozabilir.",
     },
     pl: {
       matchAnalysis: "ANALIZA MECZU",
@@ -674,6 +802,22 @@
       infoP5: "Opublikowane zakończone prognozy i ich rzeczywiste wyniki można sprawdzić w sekcji Historia.",
       infoP6: "Wyłącznie analiza statystyczna — prawdopodobieństwa są szacunkami, a nie gwarancjami.",
       infoClose: "Zamknij",
+      modelCorners: "Rożne",
+      modelCards: "Kartki",
+      modelUo: "Over/Under",
+      modelTabsAria: "Modele",
+      pageSubtitleCards: "Kartki — wartość oczekiwana, linia i prawdopodobieństwo.",
+      pageSubtitleUo: "Over/Under — wartość oczekiwana, linia i prawdopodobieństwo.",
+      historyTitleCards: "Historia — Kartki",
+      historyTitleUo: "Historia — Over/Under",
+      cardsSuffix: "KARTKI",
+      uoSuffix: "OVER/UNDER",
+      colFinalCards: "Końcowe kartki",
+      colFinalUo: "Końcowy total",
+      noSignalsInfoTextCards:
+        "Corner Edge analizuje wyłącznie mecze Premier League, La Liga, Serie A i Bundesligi. Selekcje są publikowane 24–48 godzin przed rozpoczęciem. Model kartek ocenia prawdopodobieństwo statystyczne niezależnie od rynku i generuje sygnał tylko wtedy, gdy przekracza historycznie zweryfikowany próg. Obliczenia EV oparte na rynku nie są używane do wyboru ani rankingowania sygnałów. Puchary krajowe, europejskie rozgrywki klubowe i mecze międzynarodowe nie są analizowane, ponieważ rotacje i niepewność składów mogą zniekształcać dane.",
+      noSignalsInfoTextUo:
+        "Corner Edge analizuje wyłącznie mecze Premier League, La Liga, Serie A i Bundesligi. Selekcje są publikowane 24–48 godzin przed rozpoczęciem. Model Over/Under ocenia prawdopodobieństwo statystyczne niezależnie od rynku i generuje sygnał tylko wtedy, gdy przekracza historycznie zweryfikowany próg. Obliczenia EV oparte na rynku nie są używane do wyboru ani rankingowania sygnałów. Puchary krajowe, europejskie rozgrywki klubowe i mecze międzynarodowe nie są analizowane, ponieważ rotacje i niepewność składów mogą zniekształcać dane.",
     },
     ru: {
       matchAnalysis: "АНАЛИЗ МАТЧА",
@@ -744,15 +888,111 @@
       infoP5: "Опубликованные завершённые прогнозы и их фактические результаты можно проверить в разделе «История».",
       infoP6: "Только статистический анализ — вероятности являются оценками, а не гарантиями.",
       infoClose: "Закрыть",
+      modelCorners: "Угловые",
+      modelCards: "Карточки",
+      modelUo: "Тотал",
+      modelTabsAria: "Модели",
+      pageSubtitleCards: "Карточки — ожидаемая ценность, линия и вероятность.",
+      pageSubtitleUo: "Тотал — ожидаемая ценность, линия и вероятность.",
+      historyTitleCards: "История — Карточки",
+      historyTitleUo: "История — Тотал",
+      cardsSuffix: "КАРТОЧКИ",
+      uoSuffix: "ТОТАЛ",
+      colFinalCards: "Итоговые карточки",
+      colFinalUo: "Итоговый тотал",
+      noSignalsInfoTextCards:
+        "Corner Edge анализирует матчи только из Premier League, La Liga, Serie A и Bundesliga. Селекции публикуются за 24–48 часов до начала. Модель карточек оценивает статистическую вероятность независимо от рынка и формирует сигнал только когда она превышает исторически подтверждённый порог. Рыночные расчёты EV не используются для выбора или ранжирования сигналов. Национальные кубки, европейские клубные турниры и международные матчи не анализируются, поскольку ротации и неопределённость составов могут искажать данные.",
+      noSignalsInfoTextUo:
+        "Corner Edge анализирует матчи только из Premier League, La Liga, Serie A и Bundesliga. Селекции публикуются за 24–48 часов до начала. Модель тотала оценивает статистическую вероятность независимо от рынка и формирует сигнал только когда она превышает исторически подтверждённый порог. Рыночные расчёты EV не используются для выбора или ранжирования сигналов. Национальные кубки, европейские клубные турниры и международные матчи не анализируются, поскольку ротации и неопределённость составов могут искажать данные.",
     },
   };
 
+
+  const MODEL_IDS = ["corners", "cards", "uo"];
+
+  const MODELS = {
+    corners: {
+      id: "corners",
+      currentPath: "data/current.json",
+      previousPath: "data/previous.json",
+      historyPath: "data/history.json",
+      tabLabelKey: "modelCorners",
+      pageSubtitleKey: "pageSubtitle",
+      historyTitleKey: "historyTitle",
+      marketSuffixKey: "cornersSuffix",
+      colFinalKey: "colFinalCorners",
+      noSignalsInfoTextKey: "noSignalsInfoText",
+      resultField: "finalCorners",
+    },
+    cards: {
+      id: "cards",
+      currentPath: "data/cards_current.json",
+      previousPath: null,
+      historyPath: "data/cards_history.json",
+      tabLabelKey: "modelCards",
+      pageSubtitleKey: "pageSubtitleCards",
+      historyTitleKey: "historyTitleCards",
+      marketSuffixKey: "cardsSuffix",
+      colFinalKey: "colFinalCards",
+      noSignalsInfoTextKey: "noSignalsInfoTextCards",
+      resultField: "finalCards",
+    },
+    uo: {
+      id: "uo",
+      currentPath: "data/uo_current.json",
+      previousPath: null,
+      historyPath: "data/uo_history.json",
+      tabLabelKey: "modelUo",
+      pageSubtitleKey: "pageSubtitleUo",
+      historyTitleKey: "historyTitleUo",
+      marketSuffixKey: "uoSuffix",
+      colFinalKey: "colFinalUo",
+      noSignalsInfoTextKey: "noSignalsInfoTextUo",
+      resultField: "finalTotal",
+    },
+  };
+
+  function parseModelParam() {
+    const raw = String(new URLSearchParams(window.location.search).get("model") || "")
+      .trim()
+      .toLowerCase();
+    if (raw === "cards" || raw === "uo" || raw === "corners") return raw;
+    return "corners";
+  }
+
+  function activeModel() {
+    return MODELS[state.model] || MODELS.corners;
+  }
+
+  function buildQuery(extra) {
+    const params = new URLSearchParams();
+    const model = (extra && extra.model) || state.model || "corners";
+    params.set("model", model);
+    if (extra) {
+      Object.keys(extra).forEach((key) => {
+        if (key === "model") return;
+        const val = extra[key];
+        if (val == null || val === "") return;
+        params.set(key, String(val));
+      });
+    }
+    const q = params.toString();
+    return q ? `?${q}` : "";
+  }
+
+  function hrefWithModel(base, extra) {
+    return `${base}${buildQuery(extra || {})}`;
+  }
+
   const state = {
     lang: "en",
+    model: "corners",
     current: null,
     previous: null,
+    publishedHistory: null,
     historyMode: "current",
   };
+
 
   function isSupportedLang(code) {
     return Object.prototype.hasOwnProperty.call(I18N, code);
@@ -843,6 +1083,75 @@
     }
 
     syncModelInfoLabels();
+    applyModelChrome();
+  }
+
+  function applyModelChrome() {
+    const model = activeModel();
+
+    const setByKey = (el, key) => {
+      if (!el || !key) return;
+      const value = t(key);
+      if (value && value !== key) el.textContent = value;
+    };
+
+    setByKey(document.querySelector('.page-subtitle[data-i18n="pageSubtitle"]'), model.pageSubtitleKey);
+    setByKey(document.querySelector('[data-i18n="noSignalsInfoText"]'), model.noSignalsInfoTextKey);
+    setByKey(document.querySelector('[data-i18n="historyTitle"]'), model.historyTitleKey);
+    setByKey(document.getElementById("col-final-header"), model.colFinalKey);
+
+    const tabsNav = document.getElementById("model-tabs");
+    if (tabsNav) {
+      const aria = t("modelTabsAria");
+      if (aria && aria !== "modelTabsAria") tabsNav.setAttribute("aria-label", aria);
+    }
+
+    document.querySelectorAll(".model-tab").forEach((tab) => {
+      const id = tab.getAttribute("data-model");
+      const def = MODELS[id];
+      if (def) setByKey(tab, def.tabLabelKey);
+      tab.classList.toggle("is-active", id === model.id);
+      if (id === model.id) tab.setAttribute("aria-current", "page");
+      else tab.removeAttribute("aria-current");
+      tab.setAttribute("href", hrefForModelTab(id));
+    });
+
+    syncModelLinks();
+
+    if ((document.body.dataset.page || detectPage()) === "history") {
+      document.title = `${t(model.historyTitleKey)} | Corner Edge`;
+    }
+  }
+
+  function hrefForModelTab(modelId) {
+    const page = document.body.dataset.page || detectPage();
+    const extra = { model: modelId };
+    if (page === "history") {
+      const month = new URLSearchParams(window.location.search).get("month");
+      if (month === "previous") extra.month = "previous";
+      return hrefWithModel("history.html", extra);
+    }
+    // Prefer index.html?model=… ; fall back to same-path ?model=… if the
+    // current URL is already a clean "/" (some static servers redirect and drop query).
+    const path = String(window.location.pathname || "").toLowerCase();
+    if (path.endsWith("/") || path === "") {
+      return buildQuery(extra);
+    }
+    return hrefWithModel("index.html", extra);
+  }
+
+  function syncModelLinks() {
+    const brand = document.getElementById("brand-link");
+    if (brand) brand.setAttribute("href", hrefWithModel("index.html"));
+
+    const historyCard = document.getElementById("history-card");
+    if (historyCard) historyCard.setAttribute("href", hrefWithModel("history.html"));
+
+    const backHome = document.getElementById("back-home-link");
+    if (backHome) backHome.setAttribute("href", hrefWithModel("index.html"));
+
+    const currentMonthBtn = document.getElementById("current-month-btn");
+    if (currentMonthBtn) currentMonthBtn.setAttribute("href", hrefWithModel("history.html"));
   }
 
   function setupModelInfoModal() {
@@ -1082,7 +1391,7 @@
       row.className = "signal-row";
       row.innerHTML = `
         <div class="signal-meta">
-          <p class="league">${escapeHtml(s.league || "")} - ${t("cornersSuffix")}</p>
+          <p class="league">${escapeHtml(s.league || "")} - ${t(activeModel().marketSuffixKey)}</p>
           <p class="teams">${escapeHtml(s.homeTeam || s.home || "")} — ${escapeHtml(s.awayTeam || s.away || "")}</p>
           <p class="when">${escapeHtml(formatKickoff(kickoffValue(s)))}</p>
           ${publishedAtMarkup(s)}
@@ -1431,7 +1740,9 @@
       const oddsText = hasOdds(p.odds) ? formatNumber(Number(p.odds), 2) : t("noBet");
       const matchText = `${p.homeTeam || p.home || ""} — ${p.awayTeam || p.away || ""}`;
       const kickoffText = formatKickoff(kickoffValue(p));
-      const finalCorners = p.finalCorners == null ? "—" : String(p.finalCorners);
+      const resultField = activeModel().resultField;
+      const finalResult = p[resultField] == null ? "—" : String(p[resultField]);
+      const finalLabel = t(activeModel().colFinalKey);
       const publishedHtml = publishedAtMarkup(p);
 
       const tr = document.createElement("tr");
@@ -1442,7 +1753,7 @@
         <td>${escapeHtml(formatLineDisplay(p.line))}</td>
         <td>${formatProbability(p.probability)}</td>
         <td>${oddsText}</td>
-        <td>${escapeHtml(finalCorners)}</td>
+        <td>${escapeHtml(finalResult)}</td>
         <td><span class="status-pill ${statusClass}">${escapeHtml(statusLabel(status))}</span></td>
       `;
       tbody.appendChild(tr);
@@ -1479,8 +1790,8 @@
               <span class="hmc-value">${oddsText}</span>
             </div>
             <div class="hmc-cell">
-              <span class="hmc-label">${escapeHtml(t("colFinalCorners"))}</span>
-              <span class="hmc-value">${escapeHtml(finalCorners)}</span>
+              <span class="hmc-label">${escapeHtml(finalLabel)}</span>
+              <span class="hmc-value">${escapeHtml(finalResult)}</span>
             </div>
           </div>
           ${publishedHtml}
@@ -1517,9 +1828,72 @@
     const prevBtn = document.getElementById("prev-month-btn");
     if (prevBtn) {
       prevBtn.addEventListener("click", () => {
-        window.location.href = "history.html?month=previous";
+        window.location.href = hrefWithModel("history.html", { month: "previous" });
       });
     }
+  }
+
+  function emptyCurrentFallback() {
+    return {
+      stats: {
+        hitRate: 0,
+        backtest: 0,
+        win: 0,
+        lost: 0,
+        leagues: [
+          { name: "Premier League", hitRate: 0 },
+          { name: "La Liga", hitRate: 0 },
+          { name: "Serie A", hitRate: 0 },
+          { name: "Bundesliga", hitRate: 0 },
+        ],
+      },
+      signals: [],
+      history: {
+        monthLabel: "—",
+        summary: {
+          totalPredictions: 0,
+          win: 0,
+          lost: 0,
+          hitRate: 0,
+          averageOdds: 0,
+          monthTotal: 0,
+        },
+        predictions: [],
+      },
+    };
+  }
+
+  function emptyPreviousFallback() {
+    return {
+      monthLabel: "—",
+      summary: {
+        totalPredictions: 0,
+        win: 0,
+        lost: 0,
+        hitRate: 0,
+        averageOdds: 0,
+        monthTotal: 0,
+      },
+      predictions: [],
+    };
+  }
+
+  async function loadActiveModelData() {
+    const model = activeModel();
+    const currentPromise = loadJson(model.currentPath);
+    const historyPromise = loadJson(model.historyPath).catch(() => ({ predictions: [] }));
+    const previousPromise = model.previousPath
+      ? loadJson(model.previousPath)
+      : Promise.resolve(emptyPreviousFallback());
+
+    const [current, previous, publishedHistory] = await Promise.all([
+      currentPromise,
+      previousPromise,
+      historyPromise,
+    ]);
+    state.current = current;
+    state.previous = previous;
+    state.publishedHistory = publishedHistory || { predictions: [] };
   }
 
   function buildLangMenu(menu) {
@@ -1598,67 +1972,24 @@
   }
 
   async function init() {
+    state.model = parseModelParam();
     setupLang();
     try {
       setupModelInfoModal();
     } catch (err) {
       console.error("Model info modal setup failed:", err);
     }
-    applyI18n();
 
     const page = detectPage();
     document.body.dataset.page = page;
+    applyI18n();
 
     try {
-      const [current, previous, publishedHistory] = await Promise.all([
-        loadJson("data/current.json"),
-        loadJson("data/previous.json"),
-        loadJson("data/history.json").catch(() => ({ predictions: [] })),
-      ]);
-      state.current = current;
-      state.previous = previous;
-      state.publishedHistory = publishedHistory || { predictions: [] };
+      await loadActiveModelData();
     } catch (err) {
       console.error(err);
-      state.current = {
-        stats: {
-          hitRate: 0,
-          backtest: 0,
-          win: 0,
-          lost: 0,
-          leagues: [
-            { name: "Premier League", hitRate: 0 },
-            { name: "La Liga", hitRate: 0 },
-            { name: "Serie A", hitRate: 0 },
-            { name: "Bundesliga", hitRate: 0 },
-          ],
-        },
-        signals: [],
-        history: {
-          monthLabel: "—",
-          summary: {
-            totalPredictions: 0,
-            win: 0,
-            lost: 0,
-            hitRate: 0,
-            averageOdds: 0,
-            monthTotal: 0,
-          },
-          predictions: [],
-        },
-      };
-      state.previous = {
-        monthLabel: "—",
-        summary: {
-          totalPredictions: 0,
-          win: 0,
-          lost: 0,
-          hitRate: 0,
-          averageOdds: 0,
-          monthTotal: 0,
-        },
-        predictions: [],
-      };
+      state.current = emptyCurrentFallback();
+      state.previous = emptyPreviousFallback();
       state.publishedHistory = { predictions: [] };
     }
 

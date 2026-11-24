@@ -18,21 +18,30 @@
 <body>
   <div class="page">
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Corner Edge home">
-        <span class="brand-logo" aria-hidden="true">CE</span>
-        <span class="brand-text">
-          <span class="brand-name">Corner Edge</span>
-          <span class="brand-tag">Bet Assistant</span>
-        </span>
-      </a>
-      <div class="lang-wrap">
-        <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
-          <span id="lang-label">EN</span>
-          <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
-            <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-          </svg>
-        </button>
-        <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+      <div class="header-left">
+        <a class="brand" href="index.html" aria-label="Corner Edge home" id="brand-link">
+          <span class="brand-logo" aria-hidden="true">CE</span>
+          <span class="brand-text">
+            <span class="brand-name">Corner Edge</span>
+            <span class="brand-tag">Bet Assistant</span>
+          </span>
+        </a>
+        <nav class="model-tabs" id="model-tabs" aria-label="Models">
+          <a class="model-tab is-active" data-model="corners" href="history.html?model=corners">Corners</a>
+          <a class="model-tab" data-model="cards" href="history.html?model=cards">Cards</a>
+          <a class="model-tab" data-model="uo" href="history.html?model=uo">Over/Under</a>
+        </nav>
+      </div>
+      <div class="header-actions">
+        <div class="lang-wrap">
+          <button type="button" class="lang-btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span id="lang-label">EN</span>
+            <svg class="lang-chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true">
+              <path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </button>
+          <ul class="lang-menu" id="lang-menu" role="listbox" hidden></ul>
+        </div>
       </div>
     </header>
 
@@ -44,7 +53,7 @@
           <p class="page-subtitle" id="history-month-label">—</p>
         </div>
         <div class="history-actions">
-          <a href="index.html" class="btn btn-ghost" data-i18n="backHome">← Back</a>
+          <a href="index.html" class="btn btn-ghost" id="back-home-link" data-i18n="backHome">← Back</a>
           <button type="button" class="btn btn-primary" id="prev-month-btn" data-i18n="previousMonth">Previous month</button>
           <a href="history.html" class="btn btn-ghost" id="current-month-btn" hidden data-i18n="currentMonth">Current month</a>
         </div>
@@ -92,7 +101,7 @@
                 <th data-i18n="colLine">Line</th>
                 <th data-i18n="colProbability">Probability</th>
                 <th data-i18n="colOdds">Odds</th>
-                <th data-i18n="colFinalCorners">Final corners</th>
+                <th id="col-final-header" data-i18n="colFinalCorners">Final corners</th>
                 <th data-i18n="colStatus">Status</th>
               </tr>
             </thead>
