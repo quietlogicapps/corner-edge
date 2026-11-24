@@ -136,6 +136,70 @@ a.model-tab.is-active,
   color: var(--accent);
 }
 
+a.model-tab.is-coming-soon,
+.model-tab.is-coming-soon {
+  border-color: rgba(27, 70, 93, 0.55);
+  background: rgba(13, 40, 56, 0.55);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+a.model-tab.is-coming-soon:hover,
+a.model-tab.is-coming-soon:focus-visible,
+.model-tab.is-coming-soon:hover,
+.model-tab.is-coming-soon:focus-visible {
+  border-color: rgba(45, 106, 136, 0.65);
+  color: var(--muted);
+}
+
+a.model-tab.is-coming-soon.is-active,
+.model-tab.is-coming-soon.is-active {
+  border-color: rgba(27, 70, 93, 0.55);
+  color: var(--muted);
+}
+
+.model-tab-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.15rem;
+  padding: 0.12rem 0.35rem;
+  border-radius: 999px;
+  border: 1px solid rgba(122, 155, 176, 0.35);
+  background: rgba(7, 29, 43, 0.55);
+  color: var(--muted-soft);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.model-coming-soon-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.35rem;
+  z-index: 80;
+  max-width: min(22rem, calc(100vw - 2rem));
+  padding: 0.7rem 0.95rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  font-size: 0.92rem;
+  line-height: 1.3;
+  text-align: center;
+  transform: translate(-50%, 12px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.model-coming-soon-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 .brand-logo {
   display: grid;
   place-items: center;

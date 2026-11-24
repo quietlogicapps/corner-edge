@@ -115,6 +115,8 @@
       modelCards: "Cards",
       modelUo: "Over/Under",
       modelTabsAria: "Models",
+      comingSoonBadge: "Coming soon",
+      uoComingSoonToast: "Over/Under — Coming soon",
       pageSubtitleCards: "Cards — expected value, line and probability.",
       pageSubtitleUo: "Over/Under — expected value, line and probability.",
       historyTitleCards: "History — Cards",
@@ -201,6 +203,8 @@
       modelCards: "Картони",
       modelUo: "Над/Под",
       modelTabsAria: "Модели",
+      comingSoonBadge: "Очаквайте скоро",
+      uoComingSoonToast: "Над/Под — Очаквайте скоро",
       pageSubtitleCards: "Картони — очаквана стойност, линия и вероятност.",
       pageSubtitleUo: "Над/Под — очаквана стойност, линия и вероятност.",
       historyTitleCards: "История — Картони",
@@ -287,6 +291,8 @@
       modelCards: "Tarjetas",
       modelUo: "Más/Menos",
       modelTabsAria: "Modelos",
+      comingSoonBadge: "Próximamente",
+      uoComingSoonToast: "Más/Menos — Próximamente",
       pageSubtitleCards: "Tarjetas — valor esperado, línea y probabilidad.",
       pageSubtitleUo: "Más/Menos — valor esperado, línea y probabilidad.",
       historyTitleCards: "Historial — Tarjetas",
@@ -373,6 +379,8 @@
       modelCards: "Cartões",
       modelUo: "Mais/Menos",
       modelTabsAria: "Modelos",
+      comingSoonBadge: "Em breve",
+      uoComingSoonToast: "Mais/Menos — Em breve",
       pageSubtitleCards: "Cartões — valor esperado, linha e probabilidade.",
       pageSubtitleUo: "Mais/Menos — valor esperado, linha e probabilidade.",
       historyTitleCards: "Histórico — Cartões",
@@ -460,6 +468,8 @@
       modelCards: "Karten",
       modelUo: "Über/Unter",
       modelTabsAria: "Modelle",
+      comingSoonBadge: "Demnächst",
+      uoComingSoonToast: "Über/Unter — Demnächst",
       pageSubtitleCards: "Karten — erwarteter Wert, Linie und Wahrscheinlichkeit.",
       pageSubtitleUo: "Über/Unter — erwarteter Wert, Linie und Wahrscheinlichkeit.",
       historyTitleCards: "Verlauf — Karten",
@@ -547,6 +557,8 @@
       modelCards: "Cartons",
       modelUo: "Plus/Moins",
       modelTabsAria: "Modèles",
+      comingSoonBadge: "Bientôt",
+      uoComingSoonToast: "Plus/Moins — Bientôt",
       pageSubtitleCards: "Cartons — valeur attendue, ligne et probabilité.",
       pageSubtitleUo: "Plus/Moins — valeur attendue, ligne et probabilité.",
       historyTitleCards: "Historique — Cartons",
@@ -634,6 +646,8 @@
       modelCards: "Cartellini",
       modelUo: "Over/Under",
       modelTabsAria: "Modelli",
+      comingSoonBadge: "Prossimamente",
+      uoComingSoonToast: "Over/Under — Prossimamente",
       pageSubtitleCards: "Cartellini — valore atteso, linea e probabilità.",
       pageSubtitleUo: "Over/Under — valore atteso, linea e probabilità.",
       historyTitleCards: "Cronologia — Cartellini",
@@ -720,6 +734,8 @@
       modelCards: "Kartlar",
       modelUo: "Üst/Alt",
       modelTabsAria: "Modeller",
+      comingSoonBadge: "Yakında",
+      uoComingSoonToast: "Üst/Alt — Yakında",
       pageSubtitleCards: "Kartlar — beklenen değer, çizgi ve olasılık.",
       pageSubtitleUo: "Üst/Alt — beklenen değer, çizgi ve olasılık.",
       historyTitleCards: "Geçmiş — Kartlar",
@@ -806,6 +822,8 @@
       modelCards: "Kartki",
       modelUo: "Over/Under",
       modelTabsAria: "Modele",
+      comingSoonBadge: "Wkrótce",
+      uoComingSoonToast: "Over/Under — Wkrótce",
       pageSubtitleCards: "Kartki — wartość oczekiwana, linia i prawdopodobieństwo.",
       pageSubtitleUo: "Over/Under — wartość oczekiwana, linia i prawdopodobieństwo.",
       historyTitleCards: "Historia — Kartki",
@@ -892,6 +910,8 @@
       modelCards: "Карточки",
       modelUo: "Тотал",
       modelTabsAria: "Модели",
+      comingSoonBadge: "Скоро",
+      uoComingSoonToast: "Тотал — Скоро",
       pageSubtitleCards: "Карточки — ожидаемая ценность, линия и вероятность.",
       pageSubtitleUo: "Тотал — ожидаемая ценность, линия и вероятность.",
       historyTitleCards: "История — Карточки",
@@ -952,11 +972,32 @@
     },
   };
 
+  // Temporarily hide public U/O model UI; keep Cards/Corners fully active.
+  const MODEL_COMING_SOON = { uo: true };
+
+  function isModelComingSoon(modelId) {
+    return Boolean(MODEL_COMING_SOON[modelId]);
+  }
+
   function parseModelParam() {
     const raw = String(new URLSearchParams(window.location.search).get("model") || "")
       .trim()
       .toLowerCase();
-    if (raw === "cards" || raw === "uo" || raw === "corners") return raw;
+    // Public U/O is temporarily unavailable — fall back to Corners.
+    if (raw === "uo" || isModelComingSoon(raw)) {
+      try {
+        const url = new URL(window.location.href);
+        url.searchParams.delete("model");
+        const next = url.pathname + (url.search || "") + url.hash;
+        if (next !== window.location.pathname + window.location.search + window.location.hash) {
+          window.history.replaceState(null, "", next);
+        }
+      } catch (err) {
+        /* ignore URL cleanup failures */
+      }
+      return "corners";
+    }
+    if (raw === "cards" || raw === "corners") return raw;
     return "corners";
   }
 
@@ -1109,7 +1150,37 @@
     document.querySelectorAll(".model-tab").forEach((tab) => {
       const id = tab.getAttribute("data-model");
       const def = MODELS[id];
-      if (def) setByKey(tab, def.tabLabelKey);
+      const comingSoon = isModelComingSoon(id);
+
+      if (comingSoon) {
+        const label = def ? t(def.tabLabelKey) : id;
+        const badge = t("comingSoonBadge");
+        tab.classList.add("is-coming-soon");
+        tab.classList.remove("is-active");
+        tab.removeAttribute("aria-current");
+        tab.setAttribute("aria-disabled", "true");
+        tab.setAttribute("href", "#");
+        tab.setAttribute(
+          "aria-label",
+          `${label && label !== def.tabLabelKey ? label : "Over/Under"} — ${badge !== "comingSoonBadge" ? badge : "Coming soon"}`
+        );
+        tab.innerHTML = `<span class="model-tab-label">${escapeHtml(
+          label && label !== (def && def.tabLabelKey) ? label : "Over/Under"
+        )}</span><span class="model-tab-badge">${escapeHtml(
+          badge !== "comingSoonBadge" ? badge : "Coming soon"
+        )}</span>`;
+        return;
+      }
+
+      tab.classList.remove("is-coming-soon");
+      tab.removeAttribute("aria-disabled");
+      if (def) {
+        const label = t(def.tabLabelKey);
+        if (label && label !== def.tabLabelKey) {
+          tab.textContent = label;
+          tab.setAttribute("aria-label", label);
+        }
+      }
       tab.classList.toggle("is-active", id === model.id);
       if (id === model.id) tab.setAttribute("aria-current", "page");
       else tab.removeAttribute("aria-current");
@@ -1117,10 +1188,53 @@
     });
 
     syncModelLinks();
+    setupComingSoonTabs();
 
     if ((document.body.dataset.page || detectPage()) === "history") {
       document.title = `${t(model.historyTitleKey)} | Corner Edge`;
     }
+  }
+
+  function showComingSoonToast() {
+    let toast = document.getElementById("model-coming-soon-toast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.id = "model-coming-soon-toast";
+      toast.className = "model-coming-soon-toast";
+      toast.setAttribute("role", "status");
+      toast.setAttribute("aria-live", "polite");
+      document.body.appendChild(toast);
+    }
+    const msg = t("uoComingSoonToast");
+    toast.textContent = msg && msg !== "uoComingSoonToast" ? msg : "Over/Under — Coming soon";
+    toast.classList.add("is-visible");
+    clearTimeout(showComingSoonToast._timer);
+    showComingSoonToast._timer = setTimeout(() => {
+      toast.classList.remove("is-visible");
+    }, 2800);
+  }
+
+  function setupComingSoonTabs() {
+    const tabsNav = document.getElementById("model-tabs");
+    if (!tabsNav || tabsNav.dataset.comingSoonBound === "1") return;
+    tabsNav.dataset.comingSoonBound = "1";
+
+    const handleActivate = (event) => {
+      const tab = event.target.closest(".model-tab");
+      if (!tab || !isModelComingSoon(tab.getAttribute("data-model"))) return;
+      event.preventDefault();
+      event.stopPropagation();
+      showComingSoonToast();
+    };
+
+    tabsNav.addEventListener("click", handleActivate);
+    tabsNav.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const tab = event.target.closest(".model-tab");
+      if (!tab || !isModelComingSoon(tab.getAttribute("data-model"))) return;
+      event.preventDefault();
+      showComingSoonToast();
+    });
   }
 
   function hrefForModelTab(modelId) {
