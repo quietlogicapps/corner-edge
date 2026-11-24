@@ -90,6 +90,17 @@
       "odds": 2.0,
       "signal": "SIGNAL",
       "publishedAtUtc": "2026-11-24T20:36:39Z"
+    },
+    {
+      "kickoffUtc": "2026-11-29T16:30:00Z",
+      "league": "Premier League",
+      "homeTeam": "Arsenal",
+      "awayTeam": "Manchester City",
+      "line": "9+",
+      "probability": 60.41,
+      "odds": 1.83,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-11-24T20:36:45Z"
     }
   ]
 }
