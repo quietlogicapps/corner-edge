@@ -6,11 +6,35 @@
     "win": 0,
     "lost": 0,
     "leagues": [
-      { "name": "Premier League", "hitRate": 0 },
-      { "name": "La Liga", "hitRate": 0 },
-      { "name": "Serie A", "hitRate": 0 },
-      { "name": "Bundesliga", "hitRate": 0 }
+      {
+        "name": "Premier League",
+        "hitRate": 0
+      },
+      {
+        "name": "La Liga",
+        "hitRate": 0
+      },
+      {
+        "name": "Serie A",
+        "hitRate": 0
+      },
+      {
+        "name": "Bundesliga",
+        "hitRate": 0
+      }
     ]
   },
-  "signals": []
+  "signals": [
+    {
+      "kickoffUtc": "2026-11-28T20:00:00Z",
+      "league": "La Liga",
+      "homeTeam": "Real Madrid",
+      "awayTeam": "Alaves",
+      "line": "3+",
+      "probability": 70.75,
+      "odds": 1.8,
+      "signal": "SIGNAL",
+      "publishedAtUtc": "2026-11-27T18:29:35Z"
+    }
+  ]
 }
