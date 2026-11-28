@@ -338,6 +338,18 @@
       "finalCorners": 3,
       "status": "LOST",
       "publishedAtUtc": "2026-11-24T20:36:16Z"
+    },
+    {
+      "kickoffUtc": "2026-11-28T14:30:00Z",
+      "league": "Bundesliga",
+      "homeTeam": "Mainz",
+      "awayTeam": "Union Berlin",
+      "line": "9+",
+      "probability": 53.51,
+      "odds": 1.83,
+      "finalCorners": 10,
+      "status": "WIN",
+      "publishedAtUtc": "2026-11-23T22:23:55Z"
     }
   ]
 }
