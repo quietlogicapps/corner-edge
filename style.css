@@ -245,13 +245,15 @@ a.model-tab.is-coming-soon.is-active,
 }
 
 .lang-wrap,
-.info-btn-wrap {
+.info-btn-wrap,
+.tg-btn-wrap {
   position: relative;
   flex-shrink: 0;
 }
 
 .lang-btn,
-.info-btn {
+.info-btn,
+.tg-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -267,9 +269,12 @@ a.model-tab.is-coming-soon.is-active,
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.info-btn {
+.info-btn,
+.tg-btn {
   width: 2.35rem;
   min-width: 2.35rem;
   padding: 0;
@@ -279,15 +284,32 @@ a.model-tab.is-coming-soon.is-active,
   z-index: 1;
 }
 
+.tg-btn {
+  color: #2aabee;
+}
+
+.tg-icon {
+  display: block;
+  flex-shrink: 0;
+}
+
 .info-btn:hover,
 .info-btn:focus-visible,
+.tg-btn:hover,
+.tg-btn:focus-visible,
 .lang-btn:hover,
 .lang-btn[aria-expanded="true"] {
   border-color: #2d6a88;
   outline: none;
 }
 
-.info-tooltip {
+.tg-btn:hover,
+.tg-btn:focus-visible {
+  color: #5bc1f5;
+}
+
+.info-tooltip,
+.tg-tooltip {
   position: absolute;
   right: 0;
   top: calc(100% + 8px);
@@ -315,7 +337,9 @@ a.model-tab.is-coming-soon.is-active,
 
 @media (hover: hover) and (pointer: fine) {
   .info-btn-wrap:hover .info-tooltip,
-  .info-btn:focus-visible + .info-tooltip {
+  .info-btn:focus-visible + .info-tooltip,
+  .tg-btn-wrap:hover .tg-tooltip,
+  .tg-btn:focus-visible + .tg-tooltip {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -1301,12 +1325,14 @@ body.modal-open {
   }
 
   .info-btn,
+  .tg-btn,
   .lang-btn,
   .model-tab {
     min-height: 2.25rem;
   }
 
-  .info-btn {
+  .info-btn,
+  .tg-btn {
     width: 2.25rem;
     min-width: 2.25rem;
   }
